@@ -41,7 +41,7 @@ const defaultState: SubmitState = {
   tags: [],
   fileSize: '',
   version: '1.0.0',
-  thumbnailStyle: 'linear-gradient(135deg, #3b82f6, #1d4ed8)',
+  thumbnailStyle: '#2563eb',
   useCases: [],
   limitations: [],
   pros: [],

@@ -8,7 +8,7 @@
   font-size: 13px;
   font-weight: 500;
   padding: 6px 14px;
-  border-radius: 20px;
+  border-radius: 8px;
   transition: all var(--transition-fast);
   cursor: pointer;
 }

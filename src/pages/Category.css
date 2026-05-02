@@ -104,7 +104,7 @@
   border: 1px solid transparent;
   color: var(--text-secondary);
   padding: 6px 14px;
-  border-radius: 20px;
+  border-radius: 8px;
   font-size: 13px;
   font-weight: 500;
   cursor: pointer;
@@ -220,7 +220,7 @@
   background-color: var(--bg-surface-active);
   border: 1px solid var(--border-subtle);
   padding: 4px 10px;
-  border-radius: 20px;
+  border-radius: 8px;
   font-size: 12px;
   color: var(--text-secondary);
 }

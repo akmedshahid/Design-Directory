@@ -63,7 +63,7 @@
 .sd-title-favicon-wrapper {
   width: 56px;
   height: 56px;
-  border-radius: 14px;
+  border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -110,7 +110,7 @@
 /* Preview Area */
 .sd-preview-section {
   width: 100%;
-  border-radius: 16px;
+  border-radius: 8px;
   overflow: hidden;
   border: 1px solid var(--border-color);
   background: var(--card-bg);
@@ -172,18 +172,17 @@
   align-items: center;
   justify-content: center;
   gap: 24px;
-  background-image: radial-gradient(circle at 50% 50%, rgba(255,255,255,0.03) 1px, transparent 1px);
-  background-size: 24px 24px;
+  background: rgba(255,255,255,0.02);
 }
 
 .sd-css-preview-logo {
   width: 80px;
   height: 80px;
-  border-radius: 20px;
+  border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 16px 32px rgba(0,0,0,0.5);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
   background: var(--card-bg);
 }
 
@@ -271,9 +270,9 @@
 
 /* Login Vault */
 .sd-vault-card {
-  background: linear-gradient(145deg, rgba(20,20,20,1) 0%, rgba(10,10,10,1) 100%);
+  background: #141414;
   border: 1px solid rgba(255,255,255,0.08);
-  border-radius: 16px;
+  border-radius: 8px;
   overflow: hidden;
   position: relative;
 }
@@ -388,7 +387,7 @@
   border: 1px solid var(--border-color);
   color: var(--text-secondary);
   padding: 6px 14px;
-  border-radius: 20px;
+  border-radius: 8px;
   font-size: 13px;
   font-weight: 500;
 }
@@ -453,7 +452,7 @@
 .sd-inspector-card {
   background: var(--card-bg);
   border: 1px solid var(--border-color);
-  border-radius: 16px;
+  border-radius: 8px;
   padding: 24px;
   display: flex;
   flex-direction: column;

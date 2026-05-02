@@ -53,12 +53,11 @@ const ResourceDetail = () => {
   }
 
   // Mock data for preview gallery
-  const baseColors = resource.thumbnailStyle.match(/hsl\([^)]+\)/g) || [];
   const gallery = [
     resource.thumbnailStyle,
-    `linear-gradient(180deg, ${baseColors[0] || '#333'}, #111)`,
-    `linear-gradient(45deg, #222, ${baseColors[1] || '#444'})`,
-    `radial-gradient(circle at center, ${baseColors[1] || '#555'}, #000)`,
+    '#1c1c1f',
+    '#2a2a30',
+    '#111',
   ];
   const galleryLabels = ['Overview', 'Detail View', 'Components', 'Usage'];
 

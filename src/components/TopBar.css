@@ -111,7 +111,7 @@
   align-items: center;
   gap: 6px;
   padding: 6px 14px;
-  border-radius: 20px;
+  border-radius: 8px;
   font-size: 12px;
   font-weight: 600;
   text-decoration: none;
@@ -136,7 +136,7 @@
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #1c1c1f, #2a2a30);
+  background: var(--bg-surface-active);
   border: 1px solid var(--border-subtle);
   color: var(--text-secondary);
   display: flex;
@@ -314,10 +314,10 @@
   margin-top: 12px;
   width: 260px;
   padding: 20px;
-  border-radius: 16px;
+  border-radius: 8px;
   background-color: #111;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
   opacity: 0;
   visibility: hidden;
   transform: scale(0.95);
@@ -366,12 +366,12 @@
   height: 8px;
   border-radius: 50%;
   background-color: var(--accent-color);
-  box-shadow: 0 0 8px rgba(92, 108, 255, 0.5);
+  box-shadow: none;
 }
 
 .plan-dot.warning {
   background-color: var(--semantic-warning);
-  box-shadow: 0 0 8px rgba(245, 158, 11, 0.5);
+  box-shadow: none;
 }
 
 .usage-popover-body {

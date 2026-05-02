@@ -3902,7 +3902,7 @@ export const greatHallRooms: GreatHallRoomPreview[] = [
     "onlineCount": 58,
     "unreadCount": 4,
     "access": "Collector",
-    "accent": "linear-gradient(135deg, #5C6CFF, #181C34)",
+    "accent": "#5C6CFF",
     "tags": [
       "Framer",
       "Code"
@@ -3989,7 +3989,7 @@ export const greatHallRooms: GreatHallRoomPreview[] = [
     "onlineCount": 56,
     "unreadCount": 6,
     "access": "Collector",
-    "accent": "linear-gradient(135deg, #F59E0B, #281A0F)",
+    "accent": "#F59E0B",
     "tags": [
       "Figma",
       "Systems"
@@ -4075,7 +4075,7 @@ export const greatHallRooms: GreatHallRoomPreview[] = [
     "onlineCount": 50,
     "unreadCount": 2,
     "access": "Patron",
-    "accent": "linear-gradient(135deg, #10B981, #0E161B)",
+    "accent": "#10B981",
     "tags": [
       "3D",
       "Motion"
@@ -4597,7 +4597,7 @@ export const greatHallRooms: GreatHallRoomPreview[] = [
     "onlineCount": 72,
     "unreadCount": 0,
     "access": "Patron",
-    "accent": "linear-gradient(135deg, #FFD700, #332B00)",
+    "accent": "#FFD700",
     "tags": [
       "Exclusive",
       "Patrons"

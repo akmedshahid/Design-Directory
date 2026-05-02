@@ -94,7 +94,7 @@ const SubmitFlowCore = () => {
     updatedAt: new Date().toISOString(),
     tools: data.tools?.length ? data.tools : ['Figma'],
     fileTypes: data.fileTypes?.length ? data.fileTypes : ['.fig'],
-    thumbnailStyle: data.thumbnailStyle || 'linear-gradient(135deg, #333, #111)',
+    thumbnailStyle: data.thumbnailStyle || '#1a1a1a',
     isFeatured: false,
     isBookmarked: false,
     isFavorite: false,

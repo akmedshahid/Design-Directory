@@ -18,7 +18,7 @@
 .collection-card:hover {
   transform: translateY(-4px);
   border-color: var(--border-hover);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .collection-cover-container {
@@ -67,8 +67,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: radial-gradient(circle at 50% 50%, rgba(255,255,255,0.05) 1px, transparent 1px);
-  background-size: 16px 16px;
+  background: rgba(255,255,255,0.02);
 }
 
 .collection-card-body {

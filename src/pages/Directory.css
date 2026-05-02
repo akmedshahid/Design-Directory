@@ -4,7 +4,7 @@
 
 /* Intro Section */
 .directory-intro {
-  padding: 48px 24px 40px;
+  padding: 32px 24px 28px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,7 +21,7 @@
   background-color: rgba(92, 108, 255, 0.1);
   border: 1px solid rgba(92, 108, 255, 0.2);
   color: var(--accent-color);
-  border-radius: 20px;
+  border-radius: 8px;
   font-size: 13px;
   font-weight: 600;
   margin-bottom: 24px;
@@ -29,10 +29,10 @@
 .text-accent { color: var(--accent-color); }
 
 .intro-heading {
-  font-size: 38px;
+  font-size: 28px;
   font-weight: 700;
   color: var(--text-primary);
-  letter-spacing: -1px;
+  letter-spacing: -0.5px;
   margin-bottom: 12px;
   line-height: 1.1;
 }
@@ -183,7 +183,7 @@
   background-color: var(--bg-surface);
   border: 1px solid var(--border-subtle);
   padding: 4px 10px;
-  border-radius: 20px;
+  border-radius: 8px;
   text-decoration: none;
   transition: var(--transition-fast);
 }
@@ -204,7 +204,7 @@
   font-weight: 600;
   transition: var(--transition-fast);
   padding: 8px 16px;
-  border-radius: 20px;
+  border-radius: 8px;
   background-color: rgba(255,255,255,0.03);
 }
 

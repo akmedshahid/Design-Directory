@@ -14,7 +14,6 @@ interface GroupBuysFilteredProps {
 }
 
 const GroupBuysFiltered = ({ title, subtitle, statuses, emptyTitle, emptyDesc, personal }: GroupBuysFilteredProps) => {
-  const navigate = useNavigate();
   const [query, setQuery] = useState('');
 
   const filtered = useMemo(() => {
@@ -27,7 +26,7 @@ const GroupBuysFiltered = ({ title, subtitle, statuses, emptyTitle, emptyDesc, p
       items = items.filter(gb =>
         gb.title.toLowerCase().includes(q) ||
         gb.type.toLowerCase().includes(q) ||
-        gb.description.toLowerCase().includes(q)
+        gb.shortDescription.toLowerCase().includes(q)
       );
     }
     return items;

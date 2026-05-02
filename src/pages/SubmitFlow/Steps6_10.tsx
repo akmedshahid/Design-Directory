@@ -139,14 +139,14 @@ export const Step9Preview = () => {
   const { data, updateData, errors } = useSubmit();
 
   const styles = [
-    { bg: 'linear-gradient(135deg, #3b82f6, #1d4ed8)', label: 'Blue Default' },
-    { bg: 'linear-gradient(135deg, #10b981, #047857)', label: 'Green Emerald' },
-    { bg: 'linear-gradient(135deg, #f59e0b, #b45309)', label: 'Amber Warm' },
-    { bg: 'linear-gradient(135deg, #8b5cf6, #5b21b6)', label: 'Purple Royal' },
-    { bg: 'linear-gradient(135deg, #ec4899, #be185d)', label: 'Pink Vibrant' },
-    { bg: 'radial-gradient(circle at top right, #333, #000)', label: 'Dark Sleek' },
-    { bg: 'linear-gradient(135deg, hsl(336, 60%, 20%), hsl(253, 60%, 10%))', label: 'Apparel Dark' },
-    { bg: 'linear-gradient(135deg, hsl(122, 60%, 20%), hsl(5, 60%, 10%))', label: 'Scene Dark' },
+    { bg: '#2563eb', label: 'Blue Default' },
+    { bg: '#059669', label: 'Green Emerald' },
+    { bg: '#d97706', label: 'Amber Warm' },
+    { bg: '#7c3aed', label: 'Purple Royal' },
+    { bg: '#db2777', label: 'Pink Vibrant' },
+    { bg: '#1a1a1a', label: 'Dark Sleek' },
+    { bg: 'hsl(336, 30%, 20%)', label: 'Apparel Dark' },
+    { bg: 'hsl(122, 30%, 20%)', label: 'Scene Dark' },
   ];
 
   return (
