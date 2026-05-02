@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Bookmark, BookmarkCheck, ExternalLink, Plus, FolderPlus, Star, Heart, MessageSquare } from 'lucide-react';
 import type { Resource } from '../data';
 import { PriceBadge, ToolBadge, StatusBadge, QualityBadge, FileTypeBadge, Tooltip } from './Badges';
+import CollectionModal from './CollectionModal';
 import './ResourceCard.css';
 
 interface ResourceCardProps {
@@ -100,6 +101,7 @@ const ResourceCard: React.FC<ResourceCardProps> = ({ resource, viewMode = 'grid'
   const [isBookmarked, setIsBookmarked] = useState(resource.isBookmarked);
   const [isFavorite, setIsFavorite] = useState(resource.isFavorite);
   const [hasNote, setHasNote] = useState(false);
+  const [showCollectionModal, setShowCollectionModal] = useState(false);
 
   useEffect(() => {
     const savedNote = localStorage.getItem(`note_${resource.id}`);
@@ -203,6 +205,7 @@ const ResourceCard: React.FC<ResourceCardProps> = ({ resource, viewMode = 'grid'
 
   // GRID MODE (Default)
   return (
+    <>
     <Link to={`/app/resource/${resource.id}`} className="resource-card grid-mode">
       <div className="rc-thumbnail-wrapper">
         <ThumbnailGenerator resource={resource} />
@@ -232,7 +235,7 @@ const ResourceCard: React.FC<ResourceCardProps> = ({ resource, viewMode = 'grid'
           <a href={resource.sourceUrl} target="_blank" rel="noreferrer" className="rc-quick-btn primary">
             <ExternalLink size={14} /> Open
           </a>
-          <button className="rc-quick-btn secondary">
+          <button className="rc-quick-btn secondary" onClick={(e) => { e.preventDefault(); e.stopPropagation(); setShowCollectionModal(true); }}>
             <FolderPlus size={14} /> Collect
           </button>
         </div>
@@ -268,6 +271,14 @@ const ResourceCard: React.FC<ResourceCardProps> = ({ resource, viewMode = 'grid'
         </div>
       </div>
     </Link>
+    {showCollectionModal && (
+      <CollectionModal
+        isOpen={showCollectionModal}
+        onClose={() => setShowCollectionModal(false)}
+        resourceId={resource.id}
+      />
+    )}
+    </>
   );
 };
 

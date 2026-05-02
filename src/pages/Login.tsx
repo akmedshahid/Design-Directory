@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { User, Lock, Eye, EyeOff, Shield, ShieldAlert, Key, X, Check, Search, Mail } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
+import { useToast } from '../components/Toast';
 import './Login.css';
 
 const Login = () => {
@@ -16,6 +17,7 @@ const Login = () => {
   const [showGuide, setShowGuide] = useState(false);
 
   const { login, isAuthenticated } = useAuth();
+  const { toast } = useToast();
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -162,7 +164,7 @@ const Login = () => {
               <span className="remember-label">Remember me</span>
             </label>
             
-            <button type="button" className="invite-link-btn" style={{ fontSize: '13px' }}>
+            <button type="button" className="invite-link-btn" style={{ fontSize: '13px' }} onClick={() => toast('Contact the directory curator or check your invite email for access details.', 'info')}>
               Forgot access?
             </button>
           </div>

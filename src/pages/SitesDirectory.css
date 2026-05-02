@@ -1,15 +1,15 @@
 .sites-directory-page {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 40px 48px 100px;
+  padding: 32px 36px 64px;
 }
 
 .sd-compact-header {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  margin-bottom: 48px;
-  padding-bottom: 32px;
+  margin-bottom: 32px;
+  padding-bottom: 24px;
   border-bottom: 1px solid var(--border-color);
   gap: 24px;
 }
@@ -35,7 +35,7 @@
 }
 
 .sd-intro-heading {
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 700;
   color: var(--text-primary);
   margin: 0 0 8px 0;
@@ -43,7 +43,7 @@
 }
 
 .sd-intro-desc {
-  font-size: 15px;
+  font-size: 14px;
   color: var(--text-secondary);
   margin: 0 0 20px 0;
   max-width: 600px;
@@ -80,7 +80,7 @@
 .sd-grouped-content {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 32px;
 }
 
 .sd-category-group {
@@ -104,7 +104,7 @@
 }
 
 .sd-group-title {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
   color: var(--text-primary);
   margin: 0;
