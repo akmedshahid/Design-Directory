@@ -74,7 +74,7 @@ const GroupBuysHome = () => {
           <section className="gb-section">
             <div className="gb-section-header">
               <h2>Top Voted Requests</h2>
-              <Link to="/app/group-buys/voting" className="gb-view-all">View all</Link>
+              <Link to="/app/group-buys/requests" className="gb-view-all">View all</Link>
             </div>
             <div className="gb-list-container">
               {votingBuys.slice(0, 3).map(gb => (

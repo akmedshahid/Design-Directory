@@ -3,10 +3,12 @@ import { Link, useNavigate } from 'react-router-dom';
 import { sitesCategories, sites, sitesTree } from '../sitesData';
 import SiteListRow from '../components/SiteListRow';
 import { ArrowRight, Globe, Clock, ShieldCheck, CreditCard, Folder, Plus, Settings } from 'lucide-react';
+import { useToast } from '../components/Toast';
 import './SitesDirectory.css';
 
 const SitesDirectory = () => {
   const navigate = useNavigate();
+  const { toast } = useToast();
 
   // For each category, grab the first 4 items for dense display
   const displayCategories = sitesCategories.map(cat => ({
@@ -59,7 +61,7 @@ const SitesDirectory = () => {
         </div>
         
         <div className="sd-header-actions">
-          <button className="btn-secondary" onClick={() => navigate('/app/sites/manage')}>
+          <button className="btn-secondary" onClick={() => toast('Category management is available to curators and admins.', 'info')}>
             <Settings size={16} /> Manage Categories
           </button>
           <button className="btn-primary" onClick={() => navigate('/app/sites/submit')}>
