@@ -12,13 +12,13 @@
 .gb-admin-header h1 {
   font-size: 32px;
   font-weight: 700;
-  color: var(--text-primary);
+  color: #fafafa;
   margin: 0 0 12px;
 }
 
 .gb-admin-header p {
   font-size: 16px;
-  color: var(--text-secondary);
+  color: #71717a;
   margin: 0;
 }
 
@@ -26,7 +26,7 @@
   display: flex;
   gap: 8px;
   margin-bottom: 32px;
-  border-bottom: 1px solid var(--border-subtle);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .gb-admin-list {
@@ -39,8 +39,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: var(--bg-surface);
-  border: 1px solid var(--border-subtle);
+  background: #111113;
+  border: 1px solid rgba(255, 255, 255, 0.06);
   border-radius: 12px;
   padding: 20px;
   gap: 24px;
@@ -61,7 +61,7 @@
 .gb-admin-title {
   font-size: 16px;
   font-weight: 600;
-  color: var(--text-primary);
+  color: #fafafa;
   text-decoration: none;
 }
 
@@ -74,7 +74,7 @@
   align-items: center;
   gap: 8px;
   font-size: 13px;
-  color: var(--text-secondary);
+  color: #71717a;
 }
 
 .gb-admin-meta .ok {

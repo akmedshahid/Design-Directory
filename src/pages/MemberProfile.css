@@ -14,8 +14,8 @@
 .gh-profile-identity {
   width: 320px;
   flex-shrink: 0;
-  background: var(--bg-surface);
-  border: 1px solid var(--border-subtle);
+  background: #111113;
+  border: 1px solid rgba(255, 255, 255, 0.06);
   border-radius: 8px;
   padding: 32px 24px;
   display: flex;
@@ -35,7 +35,7 @@
   justify-content: center;
   font-size: 36px;
   font-weight: 700;
-  color: var(--text-primary);
+  color: #fafafa;
   border: 1px solid rgba(255, 255, 255, 0.1);
   margin-bottom: 24px;
 }
@@ -48,19 +48,19 @@
   height: 18px;
   border-radius: 50%;
   background: #10b981;
-  border: 3px solid var(--bg-surface);
+  border: 3px solid #111113;
 }
 
 .gh-profile-name {
   font-size: 24px;
   font-weight: 700;
-  color: var(--text-primary);
+  color: #fafafa;
   margin: 0 0 4px;
 }
 
 .gh-profile-username {
   font-size: 14px;
-  color: var(--text-muted);
+  color: #3f3f46;
   margin-bottom: 16px;
 }
 
@@ -75,15 +75,15 @@
   letter-spacing: 0.5px;
   margin-bottom: 24px;
 }
-.gh-profile-badge-large.admin { background: var(--accent-color); color: white; }
+.gh-profile-badge-large.admin { background: #6366f1; color: white; }
 .gh-profile-badge-large.patron { background: rgba(234, 179, 8, 0.15); color: #eab308; }
 .gh-profile-badge-large.collector { background: rgba(16, 185, 129, 0.15); color: #34d399; }
-.gh-profile-badge-large.member { background: rgba(255, 255, 255, 0.1); color: var(--text-primary); }
+.gh-profile-badge-large.member { background: rgba(255, 255, 255, 0.1); color: #fafafa; }
 
 .gh-profile-bio {
   font-size: 14px;
   line-height: 1.5;
-  color: var(--text-secondary);
+  color: #71717a;
   margin: 0 0 24px;
 }
 
@@ -120,21 +120,21 @@
   height: 36px;
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.05);
-  color: var(--text-secondary);
+  color: #71717a;
   transition: all 0.2s;
 }
 
 .social-link:hover {
   background: rgba(255, 255, 255, 0.1);
-  color: var(--text-primary);
+  color: #fafafa;
 }
 
 /* Activity Feed */
 .gh-profile-activity {
   flex: 1;
   min-width: 0;
-  background: var(--bg-surface);
-  border: 1px solid var(--border-subtle);
+  background: #111113;
+  border: 1px solid rgba(255, 255, 255, 0.06);
   border-radius: 8px;
   padding: 32px;
 }
@@ -158,7 +158,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--text-secondary);
+  color: #71717a;
   flex-shrink: 0;
 }
 
@@ -174,11 +174,11 @@
 }
 
 .gh-activity-text .action {
-  color: var(--text-secondary);
+  color: #71717a;
 }
 
 .gh-activity-text .target {
-  color: var(--text-primary);
+  color: #fafafa;
   font-weight: 500;
   text-decoration: none;
 }
@@ -189,5 +189,5 @@
 
 .gh-activity-content .time {
   font-size: 12px;
-  color: var(--text-muted);
+  color: #3f3f46;
 }

@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useLocation, Link, useNavigate } from 'react-router-dom';
-import { Search, Plus, Bookmark, Library, User, LogOut, Settings, Moon, ChevronRight, Shield, Download } from 'lucide-react';
+import { Search, Plus, User, LogOut, Settings, Moon, ChevronRight, Shield, Download } from 'lucide-react';
 import { useToast } from './Toast';
 import { useAuth, PLAN_LIMITS } from '../context/AuthContext';
 import './TopBar.css';
@@ -15,23 +15,13 @@ const UsageMeter = () => {
   const isNearLimit = percent > 80;
 
   return (
-    <div className="usage-meter" title="Daily downloads limit resets at midnight">
-      <div className="usage-meter-capsule">
-        <Download size={13} className="usage-icon" />
-        <span className={`usage-text ${isNearLimit ? 'warning' : ''}`}>
-          {used} / {limit}
+    <div className="group relative" title="Daily downloads limit resets at midnight">
+      <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-white/[0.04] border border-white/[0.06] cursor-default">
+        <Download size={12} className="text-white/30" />
+        <span className={`text-[12px] font-medium tabular-nums ${isNearLimit ? 'text-amber-400' : 'text-white/50'}`}>
+          {used}/{limit}
         </span>
-        <svg className="usage-ring" viewBox="0 0 24 24">
-          <circle cx="12" cy="12" r="10" className="usage-ring-bg" />
-          <circle 
-            cx="12" cy="12" r="10" 
-            className={`usage-ring-progress ${isNearLimit ? 'warning' : ''}`}
-            strokeDasharray="62.8" 
-            strokeDashoffset={62.8 - (percent / 100) * 62.8}
-          />
-        </svg>
       </div>
-      
       <div className="usage-popover">
         <div className="usage-popover-header">
           <div className="usage-popover-title">Usage</div>
@@ -40,18 +30,15 @@ const UsageMeter = () => {
             <span>{user.membership.plan}</span>
           </div>
         </div>
-        
         <div className="usage-popover-body">
           You have used <strong>{used}</strong> of your <strong>{limit}</strong> daily downloads.
         </div>
-        
         <div className="usage-popover-bar">
           <div 
             className={`usage-popover-fill ${isNearLimit ? 'warning' : ''}`}
             style={{ width: `${percent}%` }}
           ></div>
         </div>
-
         <div className="usage-popover-footer">
           <span>Resets at midnight UTC</span>
           {isNearLimit && <span className="warning-text">Near limit</span>}
@@ -175,20 +162,6 @@ const TopBar = () => {
     return paths;
   };
 
-  const getSearchPlaceholder = () => {
-    const path = location.pathname;
-    if (path.includes('/app/sites')) return 'Search sites...';
-    if (path.includes('/categories/')) {
-      const cat = path.split('/').pop()?.replace(/-/g, ' ');
-      return `Search ${cat || 'category'}...`;
-    }
-    if (path === '/app/bookmarks') return 'Search bookmarks...';
-    if (path === '/app/collections') return 'Search collections...';
-    if (path.includes('/app/great-hall')) return 'Search Great Hall...';
-    if (path.includes('/app/group-buys')) return 'Search group-buys...';
-    return 'Search resources...';
-  };
-
   const getSubmitLabel = () => {
     const path = location.pathname;
     if (path.includes('/app/sites')) return 'Add Site';
@@ -222,16 +195,23 @@ const TopBar = () => {
   const breadcrumbs = getBreadcrumbs();
 
   return (
-    <header className="topbar">
-      <div className="topbar-left">
-        <button className="icon-btn mobile-menu-btn" onClick={() => window.dispatchEvent(new CustomEvent('toggle-sidebar'))} aria-label="Toggle Menu">
+    <header className="flex items-center justify-between h-[48px] px-5 bg-[#0c0c0e]/80 backdrop-blur-xl border-b border-white/[0.06] sticky top-0 z-50 shrink-0">
+      <div className="flex items-center gap-4">
+        <button className="topbar-mobile-menu" onClick={() => window.dispatchEvent(new CustomEvent('toggle-sidebar'))} aria-label="Toggle Menu">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
         </button>
-        <nav className="breadcrumbs">
+        <nav className="flex items-center gap-1.5">
           {breadcrumbs.map((crumb, idx) => (
             <React.Fragment key={crumb.to}>
-              {idx > 0 && <ChevronRight size={12} className="crumb-separator" />}
-              <Link to={crumb.to} className={`crumb ${idx === breadcrumbs.length - 1 ? 'active' : ''}`}>
+              {idx > 0 && <ChevronRight size={11} className="text-white/15" />}
+              <Link
+                to={crumb.to}
+                className={`text-[13px] font-medium capitalize no-underline transition-colors ${
+                  idx === breadcrumbs.length - 1
+                    ? 'text-white/90 pointer-events-none'
+                    : 'text-white/35 hover:text-white/60'
+                }`}
+              >
                 {crumb.label}
               </Link>
             </React.Fragment>
@@ -239,60 +219,50 @@ const TopBar = () => {
         </nav>
       </div>
 
-      <div className="topbar-right">
-        <div className="search-shortcut" onClick={() => window.dispatchEvent(new CustomEvent('toggle-command-palette'))}>
-          <Search size={13} />
-          <span className="search-text">{getSearchPlaceholder()}</span>
-          <div className="shortcut-key">&#8984;K</div>
-        </div>
-        
-        <div className="topbar-divider"></div>
-        
+      <div className="flex items-center gap-2">
         <UsageMeter />
-        
-        <Link to={getSubmitPath()} className="action-btn primary-btn" title={getSubmitLabel()}>
-          <Plus size={14} />
+
+        <Link
+          to={getSubmitPath()}
+          className="flex items-center gap-1.5 h-[30px] px-3 rounded-md bg-white text-[#0a0a0b] text-[12px] font-semibold no-underline hover:bg-white/90 transition-colors"
+        >
+          <Plus size={13} />
           <span>{getSubmitLabel()}</span>
         </Link>
-        
-        <Link to="/app/bookmarks" className="icon-btn" title="Bookmarks">
-          <Bookmark size={16} />
-        </Link>
-        
-        <Link to="/app/collections" className="icon-btn" title="Collections">
-          <Library size={16} />
-        </Link>
-        
-        <div className="profile-menu-container" ref={popoverRef}>
-          <button className="user-avatar" onClick={() => setIsProfileOpen(!isProfileOpen)} title="Account">
-            <User size={14} />
+
+        <div className="relative" ref={popoverRef}>
+          <button
+            className="flex items-center justify-center w-[30px] h-[30px] rounded-full bg-white/[0.06] border border-white/[0.08] text-white/50 hover:bg-white/[0.1] hover:text-white/70 transition-colors"
+            onClick={() => setIsProfileOpen(!isProfileOpen)}
+            title="Account"
+          >
+            <User size={13} />
           </button>
-          
+
           {isProfileOpen && (
-            <div className="profile-popover">
-              <div className="profile-popover-header">
-                <div className="profile-name">{user?.username || 'Invited User'}</div>
-                <div className="profile-email">{user?.email || 'invite@designvault.local'}</div>
-                <div className="profile-badge">
-                  <Shield size={10} style={{ display: 'inline', marginRight: '4px' }} /> 
+            <div className="absolute right-0 top-[calc(100%+6px)] w-[240px] bg-[#141416] border border-white/[0.08] rounded-lg overflow-hidden z-50 shadow-[0_8px_24px_rgba(0,0,0,0.4)]">
+              <div className="px-4 py-3 border-b border-white/[0.06]">
+                <div className="text-[13px] font-semibold text-white">{user?.username || 'Invited User'}</div>
+                <div className="text-[11px] text-white/35 mt-0.5">{user?.email || 'invite@designvault.local'}</div>
+                <div className="inline-flex items-center gap-1 mt-1.5 text-[10px] font-medium text-[#5c6cff] bg-[#5c6cff]/10 px-2 py-0.5 rounded">
+                  <Shield size={9} />
                   {user?.membership?.plan !== 'None' ? user?.membership?.plan : user?.role || 'Invited Member'}
                 </div>
               </div>
-              <div className="profile-popover-body">
-                <button className="popover-item" onClick={() => { setIsProfileOpen(false); navigate('/app/billing'); }}>
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ marginRight: '8px' }}><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg> 
-                  Membership & Billing
+              <div className="py-1">
+                <button className="topbar-popover-item" onClick={() => { setIsProfileOpen(false); navigate('/app/billing'); }}>
+                  <Download size={13} /> Membership & Billing
                 </button>
-                <button className="popover-item" onClick={() => { setIsProfileOpen(false); navigate('/app/settings'); }}>
-                  <Settings size={14} style={{ marginRight: '8px' }} /> Settings
+                <button className="topbar-popover-item" onClick={() => { setIsProfileOpen(false); navigate('/app/settings'); }}>
+                  <Settings size={13} /> Settings
                 </button>
-                <button className="popover-item" onClick={() => { setIsProfileOpen(false); toast('Dark mode is the default theme', 'info'); }}>
-                  <Moon size={14} style={{ marginRight: '8px' }} /> Theme: Dark
+                <button className="topbar-popover-item" onClick={() => { setIsProfileOpen(false); toast('Dark mode is the default theme', 'info'); }}>
+                  <Moon size={13} /> Theme: Dark
                 </button>
               </div>
-              <div className="profile-popover-footer">
-                <button className="popover-item danger" onClick={handleLogout}>
-                  <LogOut size={14} style={{ marginRight: '8px' }} /> Sign out
+              <div className="border-t border-white/[0.06] py-1">
+                <button className="topbar-popover-item text-red-400 hover:!bg-red-500/10" onClick={handleLogout}>
+                  <LogOut size={13} /> Sign out
                 </button>
               </div>
             </div>

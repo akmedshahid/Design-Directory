@@ -5,14 +5,14 @@
   min-height: 0;
   min-width: 0;
   width: 100%;
-  background: var(--bg-main);
+  background: #09090b;
 }
 
 /* Sidebar */
 .gh-dm-sidebar {
   width: 320px;
-  border-right: 1px solid var(--border-subtle);
-  background: var(--bg-surface);
+  border-right: 1px solid rgba(255, 255, 255, 0.06);
+  background: #111113;
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
@@ -25,13 +25,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid var(--border-subtle);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .gh-dm-header h2 {
   font-size: 16px;
   font-weight: 600;
-  color: var(--text-primary);
+  color: #fafafa;
   margin: 0;
 }
 
@@ -41,24 +41,24 @@
   align-items: center;
   gap: 8px;
   background: rgba(255, 255, 255, 0.02);
-  border-bottom: 1px solid var(--border-subtle);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .gh-dm-search input {
   background: transparent;
   border: none;
   outline: none;
-  color: var(--text-primary);
+  color: #fafafa;
   font-size: 13px;
   width: 100%;
 }
 
 .gh-dm-search input::placeholder {
-  color: var(--text-muted);
+  color: #3f3f46;
 }
 
 .gh-dm-search svg {
-  color: var(--text-muted);
+  color: #3f3f46;
 }
 
 .gh-dm-list {
@@ -102,7 +102,7 @@
   justify-content: center;
   font-size: 14px;
   font-weight: 600;
-  color: var(--text-primary);
+  color: #fafafa;
   flex-shrink: 0;
 }
 
@@ -129,7 +129,7 @@
   height: 10px;
   border-radius: 50%;
   background: #10b981;
-  border: 2px solid var(--bg-surface);
+  border: 2px solid #111113;
 }
 
 .gh-dm-avatar.large .online-dot {
@@ -154,7 +154,7 @@
 .gh-dm-name {
   font-size: 14px;
   font-weight: 600;
-  color: var(--text-primary);
+  color: #fafafa;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -162,7 +162,7 @@
 
 .gh-dm-time {
   font-size: 11px;
-  color: var(--text-muted);
+  color: #3f3f46;
 }
 
 .gh-dm-msg-row {
@@ -174,14 +174,14 @@
 
 .gh-dm-preview {
   font-size: 12px;
-  color: var(--text-secondary);
+  color: #71717a;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
 .gh-dm-preview.unread {
-  color: var(--text-primary);
+  color: #fafafa;
   font-weight: 500;
 }
 
@@ -192,7 +192,7 @@
   flex-direction: column;
   min-width: 0;
   min-height: 0;
-  background: var(--bg-main);
+  background: #09090b;
 }
 
 .gh-dm-empty {
@@ -201,13 +201,13 @@
   align-items: center;
   justify-content: center;
   height: 100%;
-  color: var(--text-secondary);
+  color: #71717a;
 }
 
 .gh-dm-empty h3 {
   font-size: 18px;
   font-weight: 600;
-  color: var(--text-primary);
+  color: #fafafa;
   margin-bottom: 8px;
 }
 
@@ -217,8 +217,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid var(--border-subtle);
-  background: var(--bg-surface);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  background: #111113;
 }
 
 .gh-dm-chat-user {
@@ -230,14 +230,14 @@
 .gh-dm-chat-user h3 {
   font-size: 15px;
   font-weight: 600;
-  color: var(--text-primary);
+  color: #fafafa;
   margin: 0 0 2px;
 }
 
 .gh-dm-user-role {
   font-size: 11px;
   font-weight: 500;
-  color: var(--text-muted);
+  color: #3f3f46;
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
@@ -251,7 +251,7 @@
 .gh-dm-chat-actions .divider {
   width: 1px;
   height: 20px;
-  background: var(--border-subtle);
+  background: rgba(255, 255, 255, 0.06);
   margin: 0 4px;
 }
 
@@ -269,20 +269,20 @@
   align-items: center;
   text-align: center;
   padding: 40px 24px;
-  border-bottom: 1px solid var(--border-subtle);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
   margin-bottom: 24px;
 }
 
 .gh-dm-chat-intro h2 {
   font-size: 24px;
   font-weight: 700;
-  color: var(--text-primary);
+  color: #fafafa;
   margin: 0 0 8px;
 }
 
 .gh-dm-chat-intro p {
   font-size: 14px;
-  color: var(--text-secondary);
+  color: #71717a;
 }
 
 .gh-dm-composer {

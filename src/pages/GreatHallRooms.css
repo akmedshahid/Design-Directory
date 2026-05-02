@@ -11,19 +11,19 @@
   align-items: flex-end;
   margin-bottom: 48px;
   padding-bottom: 24px;
-  border-bottom: 1px solid var(--border-subtle);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .gh-dir-title-area h1 {
   font-size: 28px;
   font-weight: 700;
-  color: var(--text-primary);
+  color: #fafafa;
   margin: 0 0 8px;
 }
 
 .gh-dir-title-area p {
   font-size: 15px;
-  color: var(--text-secondary);
+  color: #71717a;
   margin: 0;
 }
 
@@ -37,8 +37,8 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  background: var(--bg-surface);
-  border: 1px solid var(--border-subtle);
+  background: #111113;
+  border: 1px solid rgba(255, 255, 255, 0.06);
   border-radius: 8px;
   padding: 0 12px;
   height: 36px;
@@ -49,13 +49,13 @@
   background: transparent;
   border: none;
   outline: none;
-  color: var(--text-primary);
+  color: #fafafa;
   font-size: 13px;
   width: 100%;
 }
 
 .gh-dir-search input::placeholder {
-  color: var(--text-muted);
+  color: #3f3f46;
 }
 
 /* Category Sections */
@@ -68,7 +68,7 @@
 .gh-cat-title {
   font-size: 18px;
   font-weight: 600;
-  color: var(--text-primary);
+  color: #fafafa;
   margin: 0 0 20px;
 }
 
@@ -79,8 +79,8 @@
 }
 
 .gh-dir-card {
-  background: var(--bg-surface);
-  border: 1px solid var(--border-subtle);
+  background: #111113;
+  border: 1px solid rgba(255, 255, 255, 0.06);
   border-radius: 8px;
   padding: 24px;
   text-decoration: none;
@@ -110,7 +110,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--text-secondary);
+  color: #71717a;
   border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
@@ -120,7 +120,7 @@
   align-items: flex-end;
   gap: 4px;
   font-size: 12px;
-  color: var(--text-muted);
+  color: #3f3f46;
 }
 
 .gh-dir-meta .online {
@@ -140,13 +140,13 @@
 .gh-dir-card h4 {
   font-size: 16px;
   font-weight: 600;
-  color: var(--text-primary);
+  color: #fafafa;
   margin: 0 0 8px;
 }
 
 .gh-dir-card p {
   font-size: 13px;
-  color: var(--text-secondary);
+  color: #71717a;
   line-height: 1.5;
   margin: 0;
 }

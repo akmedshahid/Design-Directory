@@ -9,11 +9,11 @@
 .premium-label {
   font-size: 13px;
   font-weight: 500;
-  color: var(--text-secondary);
+  color: #71717a;
 }
 
 .premium-label .req {
-  color: var(--accent-color);
+  color: #6366f1;
   margin-left: 4px;
 }
 
@@ -24,10 +24,10 @@
 
 .premium-input, .premium-textarea {
   width: 100%;
-  background-color: var(--bg-surface);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-md);
-  color: var(--text-primary);
+  background-color: #111113;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 8px;
+  color: #fafafa;
   padding: 12px 14px;
   font-size: 14px;
   outline: none;
@@ -36,7 +36,7 @@
 }
 
 .premium-input:focus, .premium-textarea:focus, .premium-select.open {
-  border-color: var(--text-primary);
+  border-color: #fafafa;
   box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1);
 }
 
@@ -52,7 +52,7 @@
   top: 50%;
   transform: translateY(-50%);
   font-size: 12px;
-  color: var(--text-muted);
+  color: #3f3f46;
   pointer-events: none;
 }
 
@@ -63,18 +63,18 @@
 }
 
 .premium-helper {
-  color: var(--text-muted);
+  color: #3f3f46;
   font-size: 12px;
   margin-top: -4px;
 }
 
 .premium-select {
-  background-color: var(--bg-surface);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-md);
+  background-color: #111113;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 8px;
   padding: 12px 14px;
   font-size: 14px;
-  color: var(--text-primary);
+  color: #fafafa;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -84,7 +84,7 @@
 }
 
 .premium-select .placeholder {
-  color: var(--text-muted);
+  color: #3f3f46;
 }
 
 .premium-dropdown {
@@ -92,10 +92,10 @@
   top: calc(100% + 4px);
   left: 0;
   width: 100%;
-  background-color: var(--bg-surface-hover);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-md);
-  box-shadow: var(--shadow-lg);
+  background-color: #1a1a1d;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
   max-height: 250px;
   overflow-y: auto;
   z-index: 10;
@@ -104,9 +104,9 @@
 
 .dropdown-opt {
   padding: 10px 12px;
-  border-radius: var(--radius-sm);
+  border-radius: 6px;
   font-size: 14px;
-  color: var(--text-secondary);
+  color: #71717a;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
@@ -116,20 +116,20 @@
 
 .dropdown-opt:hover {
   background-color: rgba(255,255,255,0.05);
-  color: var(--text-primary);
+  color: #fafafa;
 }
 
 .dropdown-opt.selected {
   background-color: rgba(255,255,255,0.1);
-  color: var(--text-primary);
+  color: #fafafa;
   font-weight: 500;
 }
 
 .premium-segmented {
   display: flex;
-  background-color: var(--bg-surface);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-md);
+  background-color: #111113;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 8px;
   padding: 4px;
   gap: 4px;
 }
@@ -139,8 +139,8 @@
   background: transparent;
   border: none;
   padding: 8px 12px;
-  border-radius: var(--radius-sm);
-  color: var(--text-secondary);
+  border-radius: 6px;
+  color: #71717a;
   font-size: 13px;
   font-weight: 500;
   cursor: pointer;
@@ -148,29 +148,29 @@
 }
 
 .seg-btn:hover {
-  color: var(--text-primary);
+  color: #fafafa;
 }
 
 .seg-btn.active {
-  background-color: var(--bg-surface-hover);
-  color: var(--text-primary);
-  box-shadow: var(--shadow-sm);
+  background-color: #1a1a1d;
+  color: #fafafa;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.3);
 }
 
 .premium-tag-input {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  background-color: var(--bg-surface);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-md);
+  background-color: #111113;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 8px;
   padding: 8px;
   min-height: 44px;
   transition: all 0.2s ease;
 }
 
 .premium-tag-input:focus-within {
-  border-color: var(--text-primary);
+  border-color: #fafafa;
 }
 
 .tag-chip {
@@ -181,13 +181,13 @@
   padding: 4px 10px;
   border-radius: 8px;
   font-size: 12px;
-  color: var(--text-primary);
+  color: #fafafa;
 }
 
 .tag-chip button {
   background: transparent;
   border: none;
-  color: var(--text-muted);
+  color: #3f3f46;
   cursor: pointer;
   padding: 0;
   display: flex;
@@ -195,7 +195,7 @@
 }
 
 .tag-chip button:hover {
-  color: var(--text-primary);
+  color: #fafafa;
 }
 
 .premium-tag-input input {
@@ -203,7 +203,7 @@
   background: transparent;
   border: none;
   outline: none;
-  color: var(--text-primary);
+  color: #fafafa;
   font-size: 14px;
   min-width: 120px;
   padding: 4px;
@@ -218,18 +218,18 @@
 
 .suggest-chip {
   background: transparent;
-  border: 1px dashed var(--border-subtle);
+  border: 1px dashed rgba(255, 255, 255, 0.06);
   padding: 4px 10px;
   border-radius: 8px;
   font-size: 12px;
-  color: var(--text-muted);
+  color: #3f3f46;
   cursor: pointer;
   transition: all 0.2s;
 }
 
 .suggest-chip:hover {
-  border-color: var(--text-secondary);
-  color: var(--text-primary);
+  border-color: #71717a;
+  color: #fafafa;
 }
 
 .repeater-list {
@@ -242,18 +242,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--bg-surface);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-md);
+  background-color: #111113;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 8px;
   padding: 10px 14px;
   font-size: 14px;
-  color: var(--text-primary);
+  color: #fafafa;
 }
 
 .repeater-item button {
   background: transparent;
   border: none;
-  color: var(--text-muted);
+  color: #3f3f46;
   cursor: pointer;
   padding: 4px;
   display: flex;
@@ -271,11 +271,11 @@
 
 .repeater-input-row input {
   flex: 1;
-  background-color: var(--bg-main);
-  border: 1px dashed var(--border-subtle);
-  border-radius: var(--radius-md);
+  background-color: #09090b;
+  border: 1px dashed rgba(255, 255, 255, 0.06);
+  border-radius: 8px;
   padding: 10px 14px;
-  color: var(--text-primary);
+  color: #fafafa;
   font-size: 14px;
   outline: none;
   transition: all 0.2s;
@@ -283,14 +283,14 @@
 
 .repeater-input-row input:focus {
   border-style: solid;
-  border-color: var(--text-primary);
+  border-color: #fafafa;
 }
 
 .repeater-input-row button {
-  background-color: var(--bg-surface-hover);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-md);
-  color: var(--text-primary);
+  background-color: #1a1a1d;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 8px;
+  color: #fafafa;
   padding: 0 16px;
   font-size: 13px;
   font-weight: 500;
