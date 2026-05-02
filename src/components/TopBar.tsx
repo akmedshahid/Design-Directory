@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useLocation, Link, useNavigate } from 'react-router-dom';
-import { Search, Plus, Bookmark, User, LogOut, Settings, Moon, ChevronRight, Shield, Download } from 'lucide-react';
+import { Search, Plus, Bookmark, Library, User, LogOut, Settings, Moon, ChevronRight, Shield, Download } from 'lucide-react';
 import { useToast } from './Toast';
 import { useAuth, PLAN_LIMITS } from '../context/AuthContext';
 import './TopBar.css';
@@ -257,6 +257,10 @@ const TopBar = () => {
         
         <Link to="/app/bookmarks" className="icon-btn" title="Bookmarks">
           <Bookmark size={16} />
+        </Link>
+        
+        <Link to="/app/collections" className="icon-btn" title="Collections">
+          <Library size={16} />
         </Link>
         
         <div className="profile-menu-container" ref={popoverRef}>
