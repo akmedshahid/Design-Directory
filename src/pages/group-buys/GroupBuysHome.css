@@ -1,6 +1,6 @@
 .gb-home-page {
-  padding-top: 40px;
-  padding-bottom: 80px;
+  padding-top: 32px;
+  padding-bottom: 48px;
   height: 100%;
   overflow-y: auto;
 }
@@ -9,7 +9,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-bottom: 40px;
+  margin-bottom: 28px;
   max-width: 600px;
 }
 
@@ -27,7 +27,7 @@
 }
 
 .gb-overview-header h1 {
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 700;
   letter-spacing: -0.5px;
   color: var(--text-primary);
@@ -35,7 +35,7 @@
 }
 
 .gb-overview-header p {
-  font-size: 16px;
+  font-size: 14px;
   color: var(--text-secondary);
   line-height: 1.6;
   margin: 0 0 24px;

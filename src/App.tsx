@@ -12,13 +12,23 @@ import Collections from './pages/Collections';
 import DirectMessages from './pages/DirectMessages';
 import Directory from './pages/Directory';
 import GreatHallHome from './pages/GreatHallHome';
+import GreatHallNotifications from './pages/GreatHallNotifications';
 import GreatHallRooms from './pages/GreatHallRooms';
+import GreatHallSaved from './pages/GreatHallSaved';
 import GroupBuysLayout from './layouts/GroupBuysLayout';
 import CreateGroupBuy from './pages/group-buys/CreateGroupBuy';
 import GroupBuysHome from './pages/group-buys/GroupBuysHome';
 import GroupBuyDetail from './pages/group-buys/GroupBuyDetail';
 import GroupBuysRules from './pages/group-buys/GroupBuysRules';
 import GroupBuysAdmin from './pages/group-buys/GroupBuysAdmin';
+import {
+  GroupBuysRequests,
+  GroupBuysScheduled,
+  GroupBuysActive,
+  GroupBuysCompleted,
+  GroupBuysMine,
+  GroupBuysPayments,
+} from './pages/group-buys/GroupBuysFiltered';
 import Login from './pages/Login';
 import MemberProfile from './pages/MemberProfile';
 import MembersDirectory from './pages/MembersDirectory';
@@ -35,13 +45,6 @@ import SitesCategory from './pages/SitesCategory';
 import SitesDirectory from './pages/SitesDirectory';
 import Submit from './pages/Submit';
 import SubmitSite from './pages/SubmitSite';
-
-const PlaceholderPage = ({ title }: { title: string }) => (
-  <div className="page-container" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100%', color: 'var(--text-secondary)' }}>
-    <h2>{title}</h2>
-    <p style={{ marginLeft: 10 }}>This page is under construction.</p>
-  </div>
-);
 
 const ProtectedRoute = ({ children }: { children: ReactNode }) => {
   const { isAuthenticated, isLoading } = useAuth();
@@ -127,19 +130,18 @@ function App() {
                 <Route path="dm/:conversationId" element={<DirectMessages />} />
                 <Route path="members" element={<MembersDirectory />} />
                 <Route path="members/:memberId" element={<MemberProfile />} />
-                <Route path="saved" element={<PlaceholderPage title="Saved" />} />
-                <Route path="notifications" element={<PlaceholderPage title="Notifications" />} />
+                <Route path="saved" element={<GreatHallSaved />} />
+                <Route path="notifications" element={<GreatHallNotifications />} />
               </Route>
 
               <Route path="group-buys" element={<GroupBuysLayout />}>
                 <Route index element={<GroupBuysHome />} />
-                <Route path="requests" element={<PlaceholderPage title="Requests & Voting" />} />
-                <Route path="voting" element={<PlaceholderPage title="Voting" />} />
-                <Route path="scheduled" element={<PlaceholderPage title="Scheduled" />} />
-                <Route path="active" element={<PlaceholderPage title="Active" />} />
-                <Route path="completed" element={<PlaceholderPage title="Completed" />} />
-                <Route path="mine" element={<PlaceholderPage title="My Group-Buys" />} />
-                <Route path="payments" element={<PlaceholderPage title="Payments" />} />
+                <Route path="requests" element={<GroupBuysRequests />} />
+                <Route path="scheduled" element={<GroupBuysScheduled />} />
+                <Route path="active" element={<GroupBuysActive />} />
+                <Route path="completed" element={<GroupBuysCompleted />} />
+                <Route path="mine" element={<GroupBuysMine />} />
+                <Route path="payments" element={<GroupBuysPayments />} />
                 <Route path="rules" element={<GroupBuysRules />} />
                 <Route path="new" element={<CreateGroupBuy />} />
                 <Route path="admin" element={<GroupBuysAdmin />} />

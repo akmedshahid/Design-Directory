@@ -4,7 +4,7 @@
 
 /* Intro Section */
 .directory-intro {
-  padding: 80px 24px;
+  padding: 48px 24px 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -29,19 +29,19 @@
 .text-accent { color: var(--accent-color); }
 
 .intro-heading {
-  font-size: 48px;
+  font-size: 38px;
   font-weight: 700;
   color: var(--text-primary);
   letter-spacing: -1px;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
   line-height: 1.1;
 }
 
 .intro-desc {
-  font-size: 18px;
+  font-size: 16px;
   color: var(--text-secondary);
   line-height: 1.5;
-  margin-bottom: 32px;
+  margin-bottom: 24px;
   max-width: 600px;
 }
 
@@ -49,7 +49,7 @@
   display: flex;
   align-items: center;
   gap: 16px;
-  margin-bottom: 40px;
+  margin-bottom: 24px;
 }
 
 .meta-item {
