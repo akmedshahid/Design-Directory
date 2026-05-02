@@ -1,6 +1,6 @@
 .gh-home-page {
   padding-top: 32px;
-  padding-bottom: 80px;
+  padding-bottom: 48px;
 }
 
 .gh-hero-card {
@@ -8,9 +8,9 @@
   background: var(--bg-surface);
   border: 1px solid var(--border-subtle);
   border-radius: 24px;
-  padding: 48px;
+  padding: 36px;
   overflow: hidden;
-  margin-bottom: 40px;
+  margin-bottom: 28px;
 }
 
 .gh-hero-bg {
@@ -58,15 +58,15 @@
 }
 
 .gh-hero-content h1 {
-  font-size: 36px;
+  font-size: 30px;
   font-weight: 700;
   color: var(--text-primary);
-  margin: 0 0 16px;
+  margin: 0 0 12px;
   letter-spacing: -0.5px;
 }
 
 .gh-hero-content p {
-  font-size: 16px;
+  font-size: 14px;
   color: var(--text-secondary);
   line-height: 1.6;
   margin: 0;

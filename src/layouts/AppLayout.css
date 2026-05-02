@@ -8,7 +8,7 @@
 
 /* Sidebar */
 .sidebar {
-  width: 260px;
+  width: 240px;
   height: 100%;
   background-color: var(--bg-surface);
   border-right: 1px solid var(--border-subtle);

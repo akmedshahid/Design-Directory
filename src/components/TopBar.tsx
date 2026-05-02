@@ -17,7 +17,7 @@ const UsageMeter = () => {
   return (
     <div className="usage-meter" title="Daily downloads limit resets at midnight">
       <div className="usage-meter-capsule">
-        <Download size={14} className="usage-icon" />
+        <Download size={13} className="usage-icon" />
         <span className={`usage-text ${isNearLimit ? 'warning' : ''}`}>
           {used} / {limit}
         </span>
@@ -32,7 +32,6 @@ const UsageMeter = () => {
         </svg>
       </div>
       
-      {/* Popover */}
       <div className="usage-popover">
         <div className="usage-popover-header">
           <div className="usage-popover-title">Usage</div>
@@ -72,21 +71,88 @@ const TopBar = () => {
   
   const getBreadcrumbs = () => {
     const path = location.pathname;
-    const paths = [];
+    const paths: { label: string; to: string }[] = [];
     
-    if (path.includes('/categories/')) {
+    if (path.includes('/app/sites/categories/')) {
       const cat = path.split('/').pop()?.replace(/-/g, ' ');
       const params = new URLSearchParams(location.search);
       const subcat = params.get('subcategory');
-      
-      paths.push({ label: 'Directory', to: '/app' });
+      paths.push({ label: 'Sites', to: '/app/sites' });
       paths.push({ label: cat || 'Category', to: path });
       if (subcat) {
         paths.push({ label: subcat, to: `${path}?subcategory=${encodeURIComponent(subcat)}` });
       }
+    } else if (path.includes('/app/categories/')) {
+      const cat = path.split('/').pop()?.replace(/-/g, ' ');
+      const params = new URLSearchParams(location.search);
+      const subcat = params.get('subcategory');
+      paths.push({ label: 'Resources', to: '/app' });
+      paths.push({ label: cat || 'Category', to: path });
+      if (subcat) {
+        paths.push({ label: subcat, to: `${path}?subcategory=${encodeURIComponent(subcat)}` });
+      }
+    } else if (path.includes('/app/sites/submit')) {
+      paths.push({ label: 'Sites', to: '/app/sites' });
+      paths.push({ label: 'Submit Site', to: path });
+    } else if (path.includes('/app/sites/')) {
+      paths.push({ label: 'Sites', to: '/app/sites' });
+      paths.push({ label: 'Site Detail', to: path });
+    } else if (path === '/app/sites') {
+      paths.push({ label: 'Sites', to: path });
     } else if (path.includes('/resource/')) {
-      paths.push({ label: 'Directory', to: '/app' });
-      paths.push({ label: 'Resource', to: path });
+      paths.push({ label: 'Resources', to: '/app' });
+      paths.push({ label: 'Resource Detail', to: path });
+    } else if (path.includes('/app/great-hall/rooms/')) {
+      paths.push({ label: 'Great Hall', to: '/app/great-hall' });
+      paths.push({ label: 'Rooms', to: '/app/great-hall/rooms' });
+      const roomId = path.split('/').pop();
+      const roomName = roomId?.replace(/-/g, ' ') || 'Room';
+      paths.push({ label: roomName, to: path });
+    } else if (path === '/app/great-hall/rooms') {
+      paths.push({ label: 'Great Hall', to: '/app/great-hall' });
+      paths.push({ label: 'Rooms', to: path });
+    } else if (path.includes('/app/great-hall/requests/')) {
+      paths.push({ label: 'Great Hall', to: '/app/great-hall' });
+      paths.push({ label: 'Requests', to: '/app/great-hall/requests' });
+      paths.push({ label: 'Detail', to: path });
+    } else if (path === '/app/great-hall/requests') {
+      paths.push({ label: 'Great Hall', to: '/app/great-hall' });
+      paths.push({ label: 'Requests', to: path });
+    } else if (path.includes('/app/great-hall/dm')) {
+      paths.push({ label: 'Great Hall', to: '/app/great-hall' });
+      paths.push({ label: 'Messages', to: path });
+    } else if (path.includes('/app/great-hall/members/')) {
+      paths.push({ label: 'Great Hall', to: '/app/great-hall' });
+      paths.push({ label: 'Members', to: '/app/great-hall/members' });
+      paths.push({ label: 'Profile', to: path });
+    } else if (path === '/app/great-hall/members') {
+      paths.push({ label: 'Great Hall', to: '/app/great-hall' });
+      paths.push({ label: 'Members', to: path });
+    } else if (path.includes('/app/great-hall/saved')) {
+      paths.push({ label: 'Great Hall', to: '/app/great-hall' });
+      paths.push({ label: 'Saved', to: path });
+    } else if (path.includes('/app/great-hall/notifications')) {
+      paths.push({ label: 'Great Hall', to: '/app/great-hall' });
+      paths.push({ label: 'Notifications', to: path });
+    } else if (path === '/app/great-hall') {
+      paths.push({ label: 'Great Hall', to: path });
+    } else if (path.includes('/app/group-buys/')) {
+      paths.push({ label: 'Group-Buys', to: '/app/group-buys' });
+      const sub = path.replace('/app/group-buys/', '');
+      const labelMap: Record<string, string> = {
+        'requests': 'Requests & Voting',
+        'scheduled': 'Scheduled',
+        'active': 'Active Buys',
+        'completed': 'Completed',
+        'mine': 'My Participation',
+        'payments': 'My Payments',
+        'rules': 'Rules & Legal',
+        'new': 'New Request',
+        'admin': 'Admin Review',
+      };
+      paths.push({ label: labelMap[sub] || sub.replace(/-/g, ' '), to: path });
+    } else if (path === '/app/group-buys') {
+      paths.push({ label: 'Group-Buys', to: path });
     } else if (path === '/app/search') {
       paths.push({ label: 'Search', to: path });
     } else if (path === '/app/bookmarks') {
@@ -98,29 +164,43 @@ const TopBar = () => {
     } else if (path === '/app/membership') {
       paths.push({ label: 'Membership', to: path });
     } else if (path === '/app/billing') {
-      paths.push({ label: 'Billing Center', to: path });
-    } else if (path.includes('/app/great-hall')) {
-      paths.push({ label: 'Great Hall', to: '/app/great-hall' });
+      paths.push({ label: 'Billing', to: path });
     } else if (path === '/app/admin') {
       paths.push({ label: 'Admin', to: path });
     } else if (path === '/app/settings') {
       paths.push({ label: 'Settings', to: path });
     } else {
-      paths.push({ label: 'Directory Overview', to: '/app' });
+      paths.push({ label: 'Resources', to: '/app' });
     }
     return paths;
   };
 
   const getSearchPlaceholder = () => {
     const path = location.pathname;
+    if (path.includes('/app/sites')) return 'Search sites...';
     if (path.includes('/categories/')) {
       const cat = path.split('/').pop()?.replace(/-/g, ' ');
-      return `Search ${cat || 'Category'}...`;
+      return `Search ${cat || 'category'}...`;
     }
-    if (path === '/app/bookmarks') return 'Search Bookmarks...';
-    if (path === '/app/collections') return 'Search Collections...';
+    if (path === '/app/bookmarks') return 'Search bookmarks...';
+    if (path === '/app/collections') return 'Search collections...';
     if (path.includes('/app/great-hall')) return 'Search Great Hall...';
-    return 'Search all resources...';
+    if (path.includes('/app/group-buys')) return 'Search group-buys...';
+    return 'Search resources...';
+  };
+
+  const getSubmitLabel = () => {
+    const path = location.pathname;
+    if (path.includes('/app/sites')) return 'Add Site';
+    if (path.includes('/app/group-buys')) return 'New Request';
+    return 'Submit';
+  };
+
+  const getSubmitPath = () => {
+    const path = location.pathname;
+    if (path.includes('/app/sites')) return '/app/sites/submit';
+    if (path.includes('/app/group-buys')) return '/app/group-buys/new';
+    return '/app/submit';
   };
 
   useEffect(() => {
@@ -150,7 +230,7 @@ const TopBar = () => {
         <nav className="breadcrumbs">
           {breadcrumbs.map((crumb, idx) => (
             <React.Fragment key={crumb.to}>
-              {idx > 0 && <ChevronRight size={14} className="crumb-separator" />}
+              {idx > 0 && <ChevronRight size={12} className="crumb-separator" />}
               <Link to={crumb.to} className={`crumb ${idx === breadcrumbs.length - 1 ? 'active' : ''}`}>
                 {crumb.label}
               </Link>
@@ -161,27 +241,27 @@ const TopBar = () => {
 
       <div className="topbar-right">
         <div className="search-shortcut" onClick={() => window.dispatchEvent(new CustomEvent('toggle-command-palette'))}>
-          <Search size={14} />
+          <Search size={13} />
           <span className="search-text">{getSearchPlaceholder()}</span>
-          <div className="shortcut-key">⌘K</div>
+          <div className="shortcut-key">&#8984;K</div>
         </div>
         
         <div className="topbar-divider"></div>
         
         <UsageMeter />
         
-        <Link to="/app/submit" className="action-btn primary-btn" title="Submit new resource">
-          <Plus size={16} />
-          <span>Submit</span>
+        <Link to={getSubmitPath()} className="action-btn primary-btn" title={getSubmitLabel()}>
+          <Plus size={14} />
+          <span>{getSubmitLabel()}</span>
         </Link>
         
-        <Link to="/app/bookmarks" className="icon-btn" title="View Bookmarks">
-          <Bookmark size={18} />
+        <Link to="/app/bookmarks" className="icon-btn" title="Bookmarks">
+          <Bookmark size={16} />
         </Link>
         
         <div className="profile-menu-container" ref={popoverRef}>
-          <button className="user-avatar" onClick={() => setIsProfileOpen(!isProfileOpen)} title="Account Settings">
-            <User size={16} />
+          <button className="user-avatar" onClick={() => setIsProfileOpen(!isProfileOpen)} title="Account">
+            <User size={14} />
           </button>
           
           {isProfileOpen && (
@@ -202,7 +282,7 @@ const TopBar = () => {
                 <button className="popover-item" onClick={() => { setIsProfileOpen(false); navigate('/app/settings'); }}>
                   <Settings size={14} style={{ marginRight: '8px' }} /> Settings
                 </button>
-                <button className="popover-item" onClick={() => { setIsProfileOpen(false); toast('Dark mode is already default', 'info'); }}>
+                <button className="popover-item" onClick={() => { setIsProfileOpen(false); toast('Dark mode is the default theme', 'info'); }}>
                   <Moon size={14} style={{ marginRight: '8px' }} /> Theme: Dark
                 </button>
               </div>
