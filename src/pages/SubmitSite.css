@@ -17,29 +17,29 @@
   gap: 24px;
   margin-bottom: 48px;
   padding-bottom: 24px;
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .ss-header-icon {
   width: 64px;
   height: 64px;
-  background-color: var(--card-bg);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-lg);
+  background-color: #111113;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--accent-color);
+  color: #6366f1;
 }
 
 .ss-header-text h1 {
   font-size: 28px;
   margin: 0 0 8px 0;
-  color: var(--text-primary);
+  color: #fafafa;
 }
 
 .ss-header-text p {
-  color: var(--text-secondary);
+  color: #71717a;
   margin: 0;
 }
 
@@ -62,24 +62,24 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  color: var(--text-muted);
+  color: #3f3f46;
   font-weight: 500;
   font-size: 14px;
 }
 
 .ss-step-item.active {
-  color: var(--text-primary);
+  color: #fafafa;
 }
 
 .ss-step-item.completed {
-  color: var(--text-secondary);
+  color: #71717a;
 }
 
 .ss-step-indicator {
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  border: 1px solid var(--border-color);
+  border: 1px solid rgba(255, 255, 255, 0.06);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -87,8 +87,8 @@
 }
 
 .ss-step-item.active .ss-step-indicator {
-  background-color: var(--accent-color);
-  border-color: var(--accent-color);
+  background-color: #6366f1;
+  border-color: #6366f1;
   color: white;
 }
 
@@ -98,11 +98,11 @@
 }
 
 .ss-main {
-  background-color: var(--card-bg);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-lg);
+  background-color: #111113;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
   padding: 32px;
-  box-shadow: var(--shadow-sm);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.3);
 }
 
 .ss-step-content {
@@ -112,7 +112,7 @@
 .ss-step-title {
   font-size: 20px;
   font-weight: 600;
-  color: var(--text-primary);
+  color: #fafafa;
   margin: 0 0 24px 0;
 }
 
@@ -126,27 +126,27 @@
 .ss-form-group label {
   font-size: 13px;
   font-weight: 500;
-  color: var(--text-secondary);
+  color: #71717a;
 }
 
 .ss-form-group input,
 .ss-form-group select,
 .ss-form-group textarea {
   background-color: var(--bg-color);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-md);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 8px;
   padding: 12px 16px;
-  color: var(--text-primary);
+  color: #fafafa;
   font-size: 14px;
   font-family: inherit;
-  transition: border-color var(--transition-fast);
+  transition: border-color 0.12s ease;
 }
 
 .ss-form-group input:focus,
 .ss-form-group select:focus,
 .ss-form-group textarea:focus {
   outline: none;
-  border-color: var(--accent-color);
+  border-color: #6366f1;
 }
 
 .ss-input-with-icon {
@@ -158,7 +158,7 @@
 .ss-input-with-icon svg {
   position: absolute;
   left: 16px;
-  color: var(--text-muted);
+  color: #3f3f46;
 }
 
 .ss-input-with-icon input {
@@ -173,7 +173,7 @@
   padding: 16px;
   background-color: rgba(245, 158, 11, 0.1);
   border: 1px solid rgba(245, 158, 11, 0.2);
-  border-radius: var(--radius-md);
+  border-radius: 8px;
   color: rgb(251, 191, 36);
   font-size: 13px;
   line-height: 1.5;
@@ -193,15 +193,15 @@
 
 .ss-toggle-text {
   font-size: 15px;
-  color: var(--text-primary);
+  color: #fafafa;
   font-weight: 500;
 }
 
 .ss-credentials-form {
   padding: 24px;
   background-color: var(--bg-color);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-md);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 8px;
 }
 
 .ss-review-grid {
@@ -210,15 +210,15 @@
   gap: 16px;
   background-color: var(--bg-color);
   padding: 24px;
-  border-radius: var(--radius-md);
-  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .ss-review-item {
   display: flex;
   justify-content: space-between;
   padding-bottom: 12px;
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .ss-review-item:last-child {
@@ -227,12 +227,12 @@
 }
 
 .ss-review-label {
-  color: var(--text-muted);
+  color: #3f3f46;
   font-size: 14px;
 }
 
 .ss-review-value {
-  color: var(--text-primary);
+  color: #fafafa;
   font-weight: 500;
   font-size: 14px;
 }
@@ -242,16 +242,16 @@
   justify-content: space-between;
   margin-top: 32px;
   padding-top: 24px;
-  border-top: 1px solid var(--border-color);
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .ss-success-card {
   text-align: center;
-  background-color: var(--card-bg);
+  background-color: #111113;
   padding: 48px;
-  border-radius: var(--radius-lg);
-  border: 1px solid var(--border-color);
-  box-shadow: var(--shadow-md);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
   max-width: 480px;
 }
 

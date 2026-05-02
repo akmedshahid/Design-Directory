@@ -1,7 +1,7 @@
 .admin-page {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-xl);
+  gap: 32px;
   max-width: 1100px;
   margin: 0 auto;
 }
@@ -10,18 +10,18 @@
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  margin-bottom: var(--spacing-md);
+  margin-bottom: 16px;
 }
 
 .admin-header h1 {
   font-size: 28px;
   font-weight: 600;
-  color: var(--text-primary);
+  color: #fafafa;
   margin-bottom: 4px;
 }
 
 .admin-header p {
-  color: var(--text-secondary);
+  color: #71717a;
   font-size: 15px;
 }
 
@@ -35,12 +35,12 @@
   align-items: center;
   gap: 6px;
   padding: 6px 12px;
-  background-color: var(--bg-surface);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-sm);
+  background-color: #111113;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 6px;
   font-size: 13px;
   font-weight: 500;
-  color: var(--text-primary);
+  color: #fafafa;
 }
 
 .stat-pill.warning {
@@ -52,37 +52,37 @@
 .admin-tabs {
   display: flex;
   gap: 8px;
-  border-bottom: 1px solid var(--border-subtle);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
   padding-bottom: 16px;
 }
 
 .admin-tab {
   background: transparent;
   border: none;
-  color: var(--text-secondary);
+  color: #71717a;
   font-size: 14px;
   font-weight: 500;
   padding: 8px 16px;
-  border-radius: var(--radius-md);
+  border-radius: 8px;
   cursor: pointer;
-  transition: var(--transition-fast);
+  transition: 0.12s ease;
 }
 
 .admin-tab:hover {
-  background-color: var(--bg-surface);
-  color: var(--text-primary);
+  background-color: #111113;
+  color: #fafafa;
 }
 
 .admin-tab.active {
-  background-color: var(--bg-surface);
-  color: var(--text-primary);
-  border: 1px solid var(--border-subtle);
+  background-color: #111113;
+  color: #fafafa;
+  border: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .admin-table-container {
-  background-color: var(--bg-surface);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-lg);
+  background-color: #111113;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
   overflow: hidden;
 }
 
@@ -97,24 +97,24 @@
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: var(--text-muted);
-  border-bottom: 1px solid var(--border-subtle);
+  color: #3f3f46;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
   font-weight: 600;
 }
 
 .admin-table td {
   padding: 16px;
-  border-bottom: 1px solid var(--border-subtle);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
   vertical-align: middle;
 }
 
 .admin-table tbody tr {
   cursor: pointer;
-  transition: var(--transition-fast);
+  transition: 0.12s ease;
 }
 
 .admin-table tbody tr:hover {
-  background-color: var(--bg-surface-hover);
+  background-color: #1a1a1d;
 }
 
 .admin-table tbody tr:last-child td {
@@ -130,9 +130,9 @@
 .admin-tiny-thumb {
   width: 64px;
   height: 48px;
-  border-radius: var(--radius-sm);
-  background-color: var(--bg-main);
-  border: 1px solid var(--border-subtle);
+  border-radius: 6px;
+  background-color: #09090b;
+  border: 1px solid rgba(255, 255, 255, 0.06);
   flex-shrink: 0;
 }
 
@@ -145,7 +145,7 @@
 .td-title {
   font-size: 14px;
   font-weight: 500;
-  color: var(--text-primary);
+  color: #fafafa;
   display: -webkit-box;
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
@@ -154,7 +154,7 @@
 
 .td-sub {
   font-size: 12px;
-  color: var(--text-secondary);
+  color: #71717a;
 }
 
 .td-tags {
@@ -165,16 +165,16 @@
 }
 
 .td-tag {
-  background-color: var(--bg-main);
-  border: 1px solid var(--border-subtle);
+  background-color: #09090b;
+  border: 1px solid rgba(255, 255, 255, 0.06);
   padding: 2px 8px;
   border-radius: 12px;
   font-size: 11px;
-  color: var(--text-primary);
+  color: #fafafa;
 }
 
 .td-tag.muted {
-  color: var(--text-secondary);
+  color: #71717a;
   border-color: transparent;
   background: transparent;
   padding: 0 4px;
@@ -182,13 +182,13 @@
 
 .td-date {
   font-size: 13px;
-  color: var(--text-secondary);
+  color: #71717a;
 }
 
 .status-badge {
   display: inline-block;
   padding: 4px 10px;
-  border-radius: var(--radius-sm);
+  border-radius: 6px;
   font-size: 11px;
   font-weight: 600;
   text-transform: uppercase;
@@ -246,8 +246,8 @@
   bottom: 0;
   width: 100%;
   max-width: 440px;
-  background-color: var(--bg-surface);
-  border-left: 1px solid var(--border-subtle);
+  background-color: #111113;
+  border-left: 1px solid rgba(255, 255, 255, 0.06);
   box-shadow: -10px 0 40px rgba(0, 0, 0, 0.5);
   display: flex;
   flex-direction: column;
@@ -262,7 +262,7 @@
 
 .drawer-header {
   padding: 20px 24px;
-  border-bottom: 1px solid var(--border-subtle);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -272,7 +272,7 @@
 .drawer-header h2 {
   font-size: 16px;
   font-weight: 600;
-  color: var(--text-primary);
+  color: #fafafa;
 }
 
 .drawer-content {
@@ -291,9 +291,9 @@
 .review-thumb {
   width: 100%;
   aspect-ratio: 16/10;
-  border-radius: var(--radius-md);
+  border-radius: 8px;
   position: relative;
-  border: 1px solid var(--border-subtle);
+  border: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .review-price-badge {
@@ -302,9 +302,9 @@
   left: 12px;
   background-color: rgba(0,0,0,0.6);
   padding: 4px 8px;
-  border-radius: var(--radius-sm);
+  border-radius: 6px;
   font-size: 11px;
-  color: var(--text-primary);
+  color: #fafafa;
   font-weight: 600;
   border: 1px solid rgba(255,255,255,0.1);
   backdrop-filter: blur(4px);
@@ -324,15 +324,15 @@
 .review-field label {
   font-size: 12px;
   font-weight: 500;
-  color: var(--text-secondary);
+  color: #71717a;
 }
 
 .review-field input,
 .review-field textarea {
-  background-color: var(--bg-main);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-sm);
-  color: var(--text-primary);
+  background-color: #09090b;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 6px;
+  color: #fafafa;
   padding: 10px 12px;
   font-size: 14px;
   outline: none;
@@ -342,7 +342,7 @@
 
 .review-field input:focus,
 .review-field textarea:focus {
-  border-color: var(--text-primary);
+  border-color: #fafafa;
 }
 
 .url-input-wrap {
@@ -355,17 +355,17 @@
 }
 
 .url-input-wrap .icon-btn {
-  background-color: var(--bg-main);
-  border: 1px solid var(--border-subtle);
+  background-color: #09090b;
+  border: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .drawer-footer {
   padding: 20px 24px;
-  border-top: 1px solid var(--border-subtle);
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
   display: flex;
   gap: 12px;
   flex-shrink: 0;
-  background-color: var(--bg-surface);
+  background-color: #111113;
 }
 
 .danger-outline {

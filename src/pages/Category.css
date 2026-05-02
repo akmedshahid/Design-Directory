@@ -12,7 +12,7 @@
   -webkit-backdrop-filter: blur(12px);
   z-index: 90;
   padding: 32px 24px 0;
-  border-bottom: 1px solid var(--border-subtle);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
   margin-bottom: 24px;
 }
 
@@ -36,27 +36,27 @@
 .category-title {
   font-size: 32px;
   font-weight: 700;
-  color: var(--text-primary);
+  color: #fafafa;
   letter-spacing: -0.5px;
 }
 
 .category-count {
   font-size: 14px;
-  color: var(--text-secondary);
+  color: #71717a;
 }
 
 .category-info-panel {
   display: flex;
   align-items: center;
   gap: 8px;
-  background-color: var(--bg-surface-active);
-  border: 1px solid var(--border-subtle);
+  background-color: #222225;
+  border: 1px solid rgba(255, 255, 255, 0.06);
   padding: 8px 16px;
-  border-radius: var(--radius-md);
+  border-radius: 8px;
 }
 
 .info-icon {
-  color: var(--accent-color);
+  color: #6366f1;
 }
 
 .info-stats {
@@ -64,16 +64,16 @@
   align-items: center;
   gap: 8px;
   font-size: 13px;
-  color: var(--text-secondary);
+  color: #71717a;
 }
 
 .info-stat strong {
-  color: var(--text-primary);
+  color: #fafafa;
   font-weight: 600;
 }
 
 .info-divider {
-  color: var(--border-subtle);
+  color: rgba(255, 255, 255, 0.06);
 }
 
 .category-controls {
@@ -102,25 +102,25 @@
 .subcat-chip {
   background-color: transparent;
   border: 1px solid transparent;
-  color: var(--text-secondary);
+  color: #71717a;
   padding: 6px 14px;
   border-radius: 8px;
   font-size: 13px;
   font-weight: 500;
   cursor: pointer;
   white-space: nowrap;
-  transition: var(--transition-fast);
+  transition: 0.12s ease;
 }
 
 .subcat-chip:hover {
-  color: var(--text-primary);
-  background-color: var(--bg-surface-hover);
+  color: #fafafa;
+  background-color: #1a1a1d;
 }
 
 .subcat-chip.active {
-  background-color: var(--bg-surface-active);
-  color: var(--text-primary);
-  border-color: var(--border-subtle);
+  background-color: #222225;
+  color: #fafafa;
+  border-color: rgba(255, 255, 255, 0.06);
 }
 
 .category-actions {
@@ -138,50 +138,50 @@
 .sort-select {
   appearance: none;
   background-color: transparent;
-  border: 1px solid var(--border-subtle);
-  color: var(--text-secondary);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  color: #71717a;
   padding: 6px 32px 6px 12px;
-  border-radius: var(--radius-md);
+  border-radius: 8px;
   font-size: 13px;
   font-weight: 500;
   cursor: pointer;
-  transition: var(--transition-fast);
+  transition: 0.12s ease;
 }
 
 .sort-select:hover {
-  border-color: var(--border-hover);
-  color: var(--text-primary);
+  border-color: rgba(255, 255, 255, 0.12);
+  color: #fafafa;
 }
 
 .sort-icon {
   position: absolute;
   right: 10px;
-  color: var(--text-secondary);
+  color: #71717a;
   pointer-events: none;
 }
 
 .filter-btn {
   background-color: transparent;
-  border: 1px solid var(--border-subtle);
-  color: var(--text-secondary);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  color: #71717a;
 }
 
 .filter-btn:hover {
-  border-color: var(--border-hover);
-  color: var(--text-primary);
+  border-color: rgba(255, 255, 255, 0.12);
+  color: #fafafa;
 }
 
 .filter-btn.active {
-  background-color: rgba(92, 108, 255, 0.1);
-  border-color: rgba(92, 108, 255, 0.3);
-  color: var(--accent-color);
+  background-color: rgba(99, 102, 241, 0.1);
+  border-color: rgba(99, 102, 241, 0.3);
+  color: #6366f1;
 }
 
 .view-toggles {
   display: flex;
-  background-color: var(--bg-surface-active);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-md);
+  background-color: #222225;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 8px;
   overflow: hidden;
 }
 
@@ -189,18 +189,18 @@
   background: transparent;
   border: none;
   padding: 6px 10px;
-  color: var(--text-muted);
+  color: #3f3f46;
   cursor: pointer;
-  transition: var(--transition-fast);
+  transition: 0.12s ease;
 }
 
 .view-btn:hover {
-  color: var(--text-secondary);
+  color: #71717a;
 }
 
 .view-btn.active {
-  background-color: var(--bg-surface-hover);
-  color: var(--text-primary);
+  background-color: #1a1a1d;
+  color: #fafafa;
 }
 
 .active-filters {
@@ -217,18 +217,18 @@
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  background-color: var(--bg-surface-active);
-  border: 1px solid var(--border-subtle);
+  background-color: #222225;
+  border: 1px solid rgba(255, 255, 255, 0.06);
   padding: 4px 10px;
   border-radius: 8px;
   font-size: 12px;
-  color: var(--text-secondary);
+  color: #71717a;
 }
 
 .filter-tag button {
   background: transparent;
   border: none;
-  color: var(--text-muted);
+  color: #3f3f46;
   padding: 2px;
   cursor: pointer;
   display: flex;
@@ -238,14 +238,14 @@
 }
 
 .filter-tag button:hover {
-  color: var(--text-primary);
+  color: #fafafa;
   background-color: rgba(255, 255, 255, 0.1);
 }
 
 .clear-filters {
   background: transparent;
   border: none;
-  color: var(--accent-color);
+  color: #6366f1;
   font-size: 12px;
   font-weight: 500;
   cursor: pointer;

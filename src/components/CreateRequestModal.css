@@ -11,8 +11,8 @@
 }
 
 .gh-modal-content {
-  background: var(--bg-surface);
-  border: 1px solid var(--border-subtle);
+  background: #111113;
+  border: 1px solid rgba(255, 255, 255, 0.06);
   border-radius: 8px;
   width: 100%;
   max-width: 600px;
@@ -39,20 +39,20 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px 24px;
-  border-bottom: 1px solid var(--border-subtle);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .gh-modal-header h2 {
   font-size: 18px;
   font-weight: 600;
-  color: var(--text-primary);
+  color: #fafafa;
   margin: 0;
 }
 
 .gh-modal-close {
   background: transparent;
   border: none;
-  color: var(--text-muted);
+  color: #3f3f46;
   cursor: pointer;
   padding: 4px;
   border-radius: 6px;
@@ -64,14 +64,14 @@
 
 .gh-modal-close:hover {
   background: rgba(255, 255, 255, 0.1);
-  color: var(--text-primary);
+  color: #fafafa;
 }
 
 .gh-modal-progress {
   display: flex;
   padding: 0 24px;
   background: rgba(0, 0, 0, 0.2);
-  border-bottom: 1px solid var(--border-subtle);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .progress-step {
@@ -81,13 +81,13 @@
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  color: var(--text-muted);
+  color: #3f3f46;
   text-align: center;
   position: relative;
 }
 
 .progress-step.active {
-  color: var(--accent-color);
+  color: #6366f1;
 }
 
 .progress-step.active::after {
@@ -97,7 +97,7 @@
   left: 0;
   right: 0;
   height: 2px;
-  background: var(--accent-color);
+  background: #6366f1;
 }
 
 .gh-modal-body {
@@ -119,17 +119,17 @@
 .form-group label {
   font-size: 13px;
   font-weight: 500;
-  color: var(--text-secondary);
+  color: #71717a;
 }
 
 .form-group input,
 .form-group textarea,
 .form-group select {
   background: rgba(0, 0, 0, 0.2);
-  border: 1px solid var(--border-subtle);
+  border: 1px solid rgba(255, 255, 255, 0.06);
   border-radius: 8px;
   padding: 12px 16px;
-  color: var(--text-primary);
+  color: #fafafa;
   font-size: 14px;
   transition: border-color 0.2s;
   outline: none;
@@ -142,13 +142,13 @@
 .form-group input:focus,
 .form-group textarea:focus,
 .form-group select:focus {
-  border-color: var(--accent-color);
+  border-color: #6366f1;
 }
 
 .gh-modal-footer {
   display: flex;
   justify-content: space-between;
   padding: 20px 24px;
-  border-top: 1px solid var(--border-subtle);
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
   background: rgba(0, 0, 0, 0.2);
 }

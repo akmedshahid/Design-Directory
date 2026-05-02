@@ -5,7 +5,7 @@
   flex: 1;
   min-height: 0;
   min-width: 0;
-  background: var(--bg-main);
+  background: #09090b;
   position: relative;
 }
 
@@ -16,8 +16,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid var(--border-subtle);
-  background: var(--bg-surface);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  background: #111113;
   flex-shrink: 0;
   z-index: 10;
 }
@@ -31,7 +31,7 @@
 .gh-room-title-area h2 {
   font-size: 16px;
   font-weight: 600;
-  color: var(--text-primary);
+  color: #fafafa;
   margin: 0;
 }
 
@@ -62,8 +62,8 @@
   align-items: center;
   gap: 16px;
   padding: 0 24px;
-  border-bottom: 1px solid var(--border-subtle);
-  background: var(--bg-surface);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  background: #111113;
   flex-shrink: 0;
   z-index: 10;
 }
@@ -71,7 +71,7 @@
 .gh-room-tab {
   background: transparent;
   border: none;
-  color: var(--text-secondary);
+  color: #71717a;
   font-size: 14px;
   font-weight: 500;
   padding: 12px 0;
@@ -81,12 +81,12 @@
 }
 
 .gh-room-tab:hover {
-  color: var(--text-primary);
+  color: #fafafa;
 }
 
 .gh-room-tab.active {
-  color: var(--text-primary);
-  border-bottom-color: var(--accent-color);
+  color: #fafafa;
+  border-bottom-color: #6366f1;
 }
 
 /* Chat Layout */
@@ -114,7 +114,7 @@
 
 .gh-room-intro {
   padding: 0 24px 40px;
-  border-bottom: 1px solid var(--border-subtle);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
   margin-bottom: 24px;
 }
 
@@ -126,20 +126,20 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--text-secondary);
+  color: #71717a;
   margin-bottom: 16px;
 }
 
 .gh-room-intro h1 {
   font-size: 24px;
   font-weight: 700;
-  color: var(--text-primary);
+  color: #fafafa;
   margin: 0 0 8px;
 }
 
 .gh-room-intro p {
   font-size: 14px;
-  color: var(--text-secondary);
+  color: #71717a;
 }
 
 /* Message Item */
@@ -154,11 +154,11 @@
 }
 
 .gh-message.pinned {
-  background: rgba(92, 108, 255, 0.03);
+  background: rgba(99, 102, 241, 0.03);
 }
 
 .gh-message.pinned:hover {
-  background: rgba(92, 108, 255, 0.05);
+  background: rgba(99, 102, 241, 0.05);
 }
 
 .gh-msg-pin-indicator {
@@ -167,7 +167,7 @@
   gap: 6px;
   font-size: 11px;
   font-weight: 600;
-  color: var(--accent-color);
+  color: #6366f1;
   margin-bottom: 4px;
   padding-left: 56px;
 }
@@ -188,11 +188,11 @@
   font-weight: 700;
   flex-shrink: 0;
   background: rgba(255, 255, 255, 0.1);
-  color: var(--text-primary);
+  color: #fafafa;
 }
 
 /* Role Badges & Colors */
-.role-admin { background: var(--accent-color); color: white; }
+.role-admin { background: #6366f1; color: white; }
 .role-patron { background: rgba(234, 179, 8, 0.2); color: #eab308; }
 .role-collector { background: rgba(16, 185, 129, 0.2); color: #10b981; }
 
@@ -212,12 +212,12 @@
 .gh-msg-author {
   font-size: 15px;
   font-weight: 600;
-  color: var(--text-primary);
+  color: #fafafa;
 }
 
 .gh-msg-time {
   font-size: 11px;
-  color: var(--text-muted);
+  color: #3f3f46;
 }
 
 .gh-msg-role-badge {
@@ -233,7 +233,7 @@
 
 .gh-msg-content {
   font-size: 14px;
-  color: var(--text-secondary);
+  color: #71717a;
   line-height: 1.6;
   white-space: pre-wrap;
   word-wrap: break-word;
@@ -246,8 +246,8 @@
   right: 0;
   display: flex;
   align-items: center;
-  background: var(--bg-surface);
-  border: 1px solid var(--border-subtle);
+  background: #111113;
+  border: 1px solid rgba(255, 255, 255, 0.06);
   border-radius: 8px;
   padding: 2px;
   opacity: 0;
@@ -270,13 +270,13 @@
   background: transparent;
   border: none;
   border-radius: 6px;
-  color: var(--text-secondary);
+  color: #71717a;
   cursor: pointer;
 }
 
 .gh-hover-btn:hover {
   background: rgba(255, 255, 255, 0.05);
-  color: var(--text-primary);
+  color: #fafafa;
 }
 
 /* Composer */
@@ -293,8 +293,8 @@
 .gh-composer-input-wrapper {
   display: flex;
   align-items: flex-end;
-  background: var(--bg-surface);
-  border: 1px solid var(--border-subtle);
+  background: #111113;
+  border: 1px solid rgba(255, 255, 255, 0.06);
   border-radius: 12px;
   padding: 8px;
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
@@ -310,7 +310,7 @@
   background: transparent;
   border: none;
   outline: none;
-  color: var(--text-primary);
+  color: #fafafa;
   font-size: 15px;
   padding: 8px;
   min-height: 40px;
@@ -319,7 +319,7 @@
 }
 
 .gh-composer-input::placeholder {
-  color: var(--text-muted);
+  color: #3f3f46;
 }
 
 .gh-composer-attach,
@@ -332,7 +332,7 @@
   background: transparent;
   border: none;
   border-radius: 8px;
-  color: var(--text-secondary);
+  color: #71717a;
   cursor: pointer;
   flex-shrink: 0;
 }
@@ -340,7 +340,7 @@
 .gh-composer-attach:hover,
 .gh-composer-emoji:hover {
   background: rgba(255, 255, 255, 0.05);
-  color: var(--text-primary);
+  color: #fafafa;
 }
 
 .gh-composer-actions {
@@ -355,7 +355,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--accent-color);
+  background: #6366f1;
   color: white;
   border: none;
   border-radius: 8px;
@@ -365,12 +365,12 @@
 
 .gh-composer-submit:disabled {
   background: rgba(255, 255, 255, 0.05);
-  color: var(--text-muted);
+  color: #3f3f46;
   cursor: not-allowed;
 }
 
 .gh-composer-submit:not(:disabled):hover {
-  background: var(--accent-hover);
+  background: #818cf8;
 }
 
 .gh-composer-hint {
@@ -380,8 +380,8 @@
 /* Right Inspector */
 .gh-room-inspector {
   width: 300px;
-  background: var(--bg-surface);
-  border-left: 1px solid var(--border-subtle);
+  background: #111113;
+  border-left: 1px solid rgba(255, 255, 255, 0.06);
   display: flex;
   flex-direction: column;
   padding: 24px;
@@ -394,13 +394,13 @@
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  color: var(--text-muted);
+  color: #3f3f46;
   margin: 0 0 12px;
 }
 
 .gh-inspector-section p {
   font-size: 14px;
-  color: var(--text-secondary);
+  color: #71717a;
   line-height: 1.5;
   margin: 0;
 }
@@ -411,7 +411,7 @@
   align-items: center;
   padding: 8px 0;
   font-size: 14px;
-  color: var(--text-secondary);
+  color: #71717a;
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
@@ -426,7 +426,7 @@
 
 .gh-empty-list {
   font-size: 14px;
-  color: var(--text-muted);
+  color: #3f3f46;
   font-style: italic;
 }
 
@@ -438,13 +438,13 @@
   align-items: center;
   justify-content: center;
   padding: 40px;
-  color: var(--text-secondary);
+  color: #71717a;
 }
 
 .gh-tab-empty-state h3 {
   font-size: 18px;
   font-weight: 600;
-  color: var(--text-primary);
+  color: #fafafa;
   margin-bottom: 8px;
 }
 

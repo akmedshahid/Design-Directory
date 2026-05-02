@@ -9,7 +9,7 @@
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  color: var(--text-muted);
+  color: #3f3f46;
   font-size: 13px;
   font-weight: 500;
   text-decoration: none;
@@ -17,7 +17,7 @@
 }
 
 .gh-breadcrumb-link:hover {
-  color: var(--text-primary);
+  color: #fafafa;
 }
 
 .gh-req-detail-layout {
@@ -43,7 +43,7 @@
   font-size: 32px;
   font-weight: 700;
   letter-spacing: -0.5px;
-  color: var(--text-primary);
+  color: #fafafa;
   line-height: 1.2;
   margin: 0;
 }
@@ -71,7 +71,7 @@
   font-weight: 700;
   text-transform: uppercase;
   background: rgba(255, 255, 255, 0.05);
-  color: var(--text-secondary);
+  color: #71717a;
 }
 .gh-priority-badge.high { color: #f87171; background: rgba(248, 113, 113, 0.1); }
 .gh-priority-badge.urgent { color: white; background: #ef4444; }
@@ -84,8 +84,8 @@
   font-size: 12px;
   font-weight: 500;
   background: rgba(255, 255, 255, 0.05);
-  color: var(--text-primary);
-  border: 1px solid var(--border-subtle);
+  color: #fafafa;
+  border: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .gh-req-author-row {
@@ -102,21 +102,21 @@
 .gh-author-info .name {
   font-size: 14px;
   font-weight: 600;
-  color: var(--text-primary);
+  color: #fafafa;
 }
 
 .gh-author-info .role {
   font-size: 12px;
   font-weight: 500;
 }
-.gh-author-info .role.admin { color: var(--accent-color); }
+.gh-author-info .role.admin { color: #6366f1; }
 .gh-author-info .role.patron { color: #eab308; }
 .gh-author-info .role.collector { color: #10b981; }
 
 .gh-meta-divider {
   width: 1px;
   height: 16px;
-  background: var(--border-subtle);
+  background: rgba(255, 255, 255, 0.06);
 }
 
 .gh-req-time {
@@ -124,13 +124,13 @@
   align-items: center;
   gap: 6px;
   font-size: 13px;
-  color: var(--text-muted);
+  color: #3f3f46;
 }
 
 .gh-req-text-lg {
   font-size: 16px;
   line-height: 1.6;
-  color: var(--text-secondary);
+  color: #71717a;
   margin-top: 24px;
   white-space: pre-wrap;
 }
@@ -150,20 +150,20 @@
   border-radius: 6px;
   font-size: 12px;
   font-weight: 500;
-  color: var(--text-secondary);
+  color: #71717a;
 }
 
 .gh-divider {
   border: none;
   height: 1px;
-  background: var(--border-subtle);
+  background: rgba(255, 255, 255, 0.06);
 }
 
 /* Suggestions */
 .gh-section-title {
   font-size: 20px;
   font-weight: 600;
-  color: var(--text-primary);
+  color: #fafafa;
   margin: 0 0 20px;
 }
 
@@ -174,8 +174,8 @@
 }
 
 .gh-suggestion-card {
-  background: var(--bg-surface);
-  border: 1px solid var(--border-subtle);
+  background: #111113;
+  border: 1px solid rgba(255, 255, 255, 0.06);
   border-radius: 12px;
   padding: 20px;
   position: relative;
@@ -199,13 +199,13 @@
 .gh-sug-title {
   font-size: 16px;
   font-weight: 600;
-  color: var(--text-primary);
+  color: #fafafa;
   margin: 0 0 8px;
 }
 
 .gh-sug-desc {
   font-size: 14px;
-  color: var(--text-secondary);
+  color: #71717a;
   line-height: 1.5;
   margin: 0 0 12px;
 }
@@ -216,7 +216,7 @@
   gap: 6px;
   font-size: 13px;
   font-weight: 500;
-  color: var(--accent-color);
+  color: #6366f1;
   text-decoration: none;
 }
 .gh-sug-link:hover { text-decoration: underline; }
@@ -227,12 +227,12 @@
   justify-content: space-between;
   margin-top: 16px;
   padding-top: 16px;
-  border-top: 1px solid var(--border-subtle);
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .gh-sug-author {
   font-size: 13px;
-  color: var(--text-muted);
+  color: #3f3f46;
 }
 
 /* Discussion */
@@ -250,7 +250,7 @@
 .gh-reply-content-area {
   flex: 1;
   background: rgba(255, 255, 255, 0.02);
-  border: 1px solid var(--border-subtle);
+  border: 1px solid rgba(255, 255, 255, 0.06);
   border-radius: 12px;
   padding: 16px;
 }
@@ -265,7 +265,7 @@
 .gh-reply-header .name {
   font-size: 14px;
   font-weight: 600;
-  color: var(--text-primary);
+  color: #fafafa;
 }
 
 .gh-reply-header .role {
@@ -273,19 +273,19 @@
   font-weight: 600;
   text-transform: uppercase;
 }
-.gh-reply-header .role.admin { color: var(--accent-color); }
+.gh-reply-header .role.admin { color: #6366f1; }
 .gh-reply-header .role.patron { color: #eab308; }
 .gh-reply-header .role.collector { color: #10b981; }
 
 .gh-reply-header .time {
   font-size: 12px;
-  color: var(--text-muted);
+  color: #3f3f46;
   margin-left: auto;
 }
 
 .gh-reply-body {
   font-size: 14px;
-  color: var(--text-secondary);
+  color: #71717a;
   line-height: 1.5;
 }
 
@@ -303,8 +303,8 @@
 
 .gh-composer-input-area {
   flex: 1;
-  background: var(--bg-surface);
-  border: 1px solid var(--border-subtle);
+  background: #111113;
+  border: 1px solid rgba(255, 255, 255, 0.06);
   border-radius: 12px;
   overflow: hidden;
   display: flex;
@@ -317,7 +317,7 @@
   background: transparent;
   border: none;
   padding: 16px;
-  color: var(--text-primary);
+  color: #fafafa;
   font-size: 14px;
   resize: vertical;
   outline: none;
@@ -329,7 +329,7 @@
   align-items: center;
   padding: 12px 16px;
   background: rgba(0, 0, 0, 0.2);
-  border-top: 1px solid var(--border-subtle);
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .gh-reply-locked {
@@ -339,17 +339,17 @@
   text-align: center;
   padding: 40px;
   background: rgba(255, 255, 255, 0.02);
-  border: 1px dashed var(--border-subtle);
+  border: 1px dashed rgba(255, 255, 255, 0.06);
   border-radius: 12px;
 }
 
 .gh-reply-locked h4 { margin: 0 0 8px; font-size: 16px; font-weight: 600; }
-.gh-reply-locked p { margin: 0; font-size: 14px; color: var(--text-secondary); }
+.gh-reply-locked p { margin: 0; font-size: 14px; color: #71717a; }
 
 /* Inspector Sidebar */
 .gh-inspector-card {
-  background: var(--bg-surface);
-  border: 1px solid var(--border-subtle);
+  background: #111113;
+  border: 1px solid rgba(255, 255, 255, 0.06);
   border-radius: 8px;
   padding: 24px;
 }
@@ -369,7 +369,7 @@
   border: 1px solid rgba(255, 255, 255, 0.05);
   border-radius: 8px;
   padding: 10px;
-  color: var(--text-secondary);
+  color: #71717a;
   font-size: 13px;
   font-weight: 500;
   cursor: pointer;
@@ -378,7 +378,7 @@
 
 .gh-action-btn:hover {
   background: rgba(255, 255, 255, 0.1);
-  color: var(--text-primary);
+  color: #fafafa;
 }
 
 .gh-action-btn.active {
@@ -400,8 +400,8 @@
   font-size: 13px;
 }
 
-.gh-meta-row .label { color: var(--text-muted); }
-.gh-meta-row .value { color: var(--text-primary); font-weight: 500; }
+.gh-meta-row .label { color: #3f3f46; }
+.gh-meta-row .value { color: #fafafa; font-weight: 500; }
 
 .gh-status-text { font-weight: 600; text-transform: capitalize; }
 .gh-status-text.open { color: #60a5fa; }
@@ -412,7 +412,7 @@
 .gh-sidebar-title {
   font-size: 14px;
   font-weight: 600;
-  color: var(--text-primary);
+  color: #fafafa;
   margin: 0 0 16px;
 }
 
@@ -436,14 +436,14 @@
   top: 16px;
   bottom: -16px;
   width: 1px;
-  background: var(--border-subtle);
+  background: rgba(255, 255, 255, 0.06);
 }
 
 .gh-timeline-dot {
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background: var(--text-muted);
+  background: #3f3f46;
   margin-top: 6px;
   flex-shrink: 0;
   position: relative;
@@ -456,7 +456,7 @@
   font-size: 13px;
 }
 
-.gh-timeline-content .event { font-weight: 500; color: var(--text-primary); text-transform: capitalize; }
-.gh-timeline-content .actor { color: var(--text-secondary); }
-.gh-timeline-content .details { color: var(--text-muted); font-size: 12px; margin-top: 4px; font-style: italic; }
-.gh-timeline-content .time { color: var(--text-muted); font-size: 11px; margin-top: 4px; }
+.gh-timeline-content .event { font-weight: 500; color: #fafafa; text-transform: capitalize; }
+.gh-timeline-content .actor { color: #71717a; }
+.gh-timeline-content .details { color: #3f3f46; font-size: 12px; margin-top: 4px; font-style: italic; }
+.gh-timeline-content .time { color: #3f3f46; font-size: 11px; margin-top: 4px; }

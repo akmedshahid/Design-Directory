@@ -19,23 +19,23 @@
   letter-spacing: 1px;
   padding: 4px 10px;
   background: rgba(255, 255, 255, 0.05);
-  border: 1px solid var(--border-subtle);
+  border: 1px solid rgba(255, 255, 255, 0.06);
   border-radius: 12px;
   margin-bottom: 16px;
-  color: var(--text-secondary);
+  color: #71717a;
 }
 
 .gb-overview-header h1 {
   font-size: 22px;
   font-weight: 700;
   letter-spacing: -0.3px;
-  color: var(--text-primary);
+  color: #fafafa;
   margin: 0 0 12px;
 }
 
 .gb-overview-header p {
   font-size: 14px;
-  color: var(--text-secondary);
+  color: #71717a;
   line-height: 1.6;
   margin: 0 0 24px;
 }
@@ -54,8 +54,8 @@
 
 .gb-summary-item {
   flex: 1;
-  background: var(--bg-surface);
-  border: 1px solid var(--border-subtle);
+  background: #111113;
+  border: 1px solid rgba(255, 255, 255, 0.06);
   border-radius: 8px;
   padding: 16px;
   display: flex;
@@ -66,13 +66,13 @@
 .gb-summary-val {
   font-size: 20px;
   font-weight: 700;
-  color: var(--text-primary);
+  color: #fafafa;
 }
 
 .gb-summary-label {
   font-size: 12px;
   font-weight: 500;
-  color: var(--text-muted);
+  color: #3f3f46;
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
@@ -94,14 +94,14 @@
 .gb-section-header h2 {
   font-size: 16px;
   font-weight: 600;
-  color: var(--text-primary);
+  color: #fafafa;
   margin: 0;
 }
 
 .gb-view-all {
   font-size: 14px;
   font-weight: 500;
-  color: var(--accent-color);
+  color: #6366f1;
   text-decoration: none;
 }
 
