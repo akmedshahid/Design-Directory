@@ -26,13 +26,12 @@
 .logo-icon {
   width: 30px;
   height: 30px;
-  background: linear-gradient(135deg, var(--accent-color), #8b5cf6);
+  background: var(--accent-color);
   border-radius: var(--radius-sm);
   display: flex;
   align-items: center;
   justify-content: center;
   color: #fff;
-  box-shadow: 0 2px 8px rgba(92, 108, 255, 0.35);
 }
 
 .logo-text {

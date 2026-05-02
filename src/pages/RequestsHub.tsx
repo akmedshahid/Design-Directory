@@ -25,9 +25,9 @@ const RequestsHub = () => {
 
   const filteredRequests = useMemo(() => {
     let requests = mockRequests;
-    if (activeTab === 'Open') requests = requests.filter(r => r.status === 'open');
-    if (activeTab === 'In Progress') requests = requests.filter(r => r.status === 'in-progress');
-    if (activeTab === 'Solved') requests = requests.filter(r => r.status === 'found' || r.status === 'closed');
+    if (activeTab === 'Open') requests = requests.filter(r => r.status === 'Open');
+    if (activeTab === 'In Progress') requests = requests.filter(r => r.status === 'In Progress');
+    if (activeTab === 'Solved') requests = requests.filter(r => r.status === 'Fulfilled' || r.status === 'Solved');
     if (activeTab === 'Mine') requests = requests.filter(r => r.authorName === 'You' || r.authorId === 'viewer');
 
     return requests.filter((request) => {

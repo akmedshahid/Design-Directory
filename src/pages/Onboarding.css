@@ -20,7 +20,7 @@
   width: 800px;
   height: 800px;
   transform: translate(-50%, -50%);
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.03) 0%, rgba(0, 0, 0, 0) 70%);
+  background: transparent;
   pointer-events: none;
 }
 
@@ -42,7 +42,7 @@
   max-height: 85vh;
   background-color: #121214;
   border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 28px;
+  border-radius: 10px;
   box-shadow: 
     0 0 0 1px rgba(0, 0, 0, 0.5),
     0 24px 64px -12px rgba(0, 0, 0, 0.8),
@@ -277,7 +277,7 @@
 
 .options-grid.chips .option-item {
   padding: 10px 16px;
-  border-radius: 20px;
+  border-radius: 8px;
   flex: 0 0 auto;
 }
 
@@ -393,13 +393,13 @@
 }
 .style-cue.minimal { border: 1px solid #3f3f46; background: transparent; }
 .style-cue.apple { background: #fff; border-radius: 8px; }
-.style-cue.luxury { border: 1px solid #d4af37; background: linear-gradient(135deg, #111, #222); }
+.style-cue.luxury { border: 1px solid #d4af37; background: #1a1a1a; }
 .style-cue.editorial { background: #e5e5e5; color: #000; font-family: Georgia, serif; }
 .style-cue.saas { background: #2563eb; border-radius: 4px; }
 .style-cue.dark { background: #000; border: 1px solid #111; }
 .style-cue.clean { background: #fafafa; border: 1px solid #e5e5e5; }
 .style-cue.brutalist { background: #000; border: 2px solid #fff; border-radius: 0; }
-.style-cue.threed { background: linear-gradient(135deg, #8b5cf6, #3b82f6); box-shadow: inset 2px 2px 4px rgba(255,255,255,0.4); }
+.style-cue.threed { background: #7c3aed; }
 .style-cue.playful { background: #ec4899; border-radius: 12px; }
 .style-cue.technical { background: transparent; border: 1px dashed #3f3f46; }
 .style-cue.futuristic { background: #000; border: 1px solid #06b6d4; box-shadow: 0 0 8px rgba(6, 182, 212, 0.4); }

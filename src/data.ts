@@ -204,7 +204,7 @@ export const resources: Resource[] = [
       ".psd",
       ".c4d"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(122, 60%, 20%), hsl(5, 60%, 10%))",
+    "thumbnailStyle": "hsl(122, 30%, 20%)",
     "isFeatured": true,
     "isHandpicked": false,
     "isNew": true,
@@ -275,7 +275,7 @@ export const resources: Resource[] = [
       ".blend",
       ".png"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(128, 60%, 20%), hsl(116, 60%, 10%))",
+    "thumbnailStyle": "hsl(128, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": true,
     "isNew": false,
@@ -342,7 +342,7 @@ export const resources: Resource[] = [
     "fileTypes": [
       ".c4d"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(312, 60%, 20%), hsl(102, 60%, 10%))",
+    "thumbnailStyle": "hsl(312, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": false,
     "isNew": false,
@@ -409,7 +409,7 @@ export const resources: Resource[] = [
     "fileTypes": [
       ".fig"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(138, 60%, 20%), hsl(245, 60%, 10%))",
+    "thumbnailStyle": "hsl(138, 30%, 20%)",
     "isFeatured": true,
     "isHandpicked": false,
     "isNew": false,
@@ -477,7 +477,7 @@ export const resources: Resource[] = [
       ".blend",
       ".svg"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(341, 60%, 20%), hsl(122, 60%, 10%))",
+    "thumbnailStyle": "hsl(341, 30%, 20%)",
     "isFeatured": true,
     "isHandpicked": true,
     "isNew": false,
@@ -550,7 +550,7 @@ export const resources: Resource[] = [
       ".svg",
       ".fig"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(355, 60%, 20%), hsl(0, 60%, 10%))",
+    "thumbnailStyle": "hsl(355, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": true,
     "isNew": true,
@@ -619,7 +619,7 @@ export const resources: Resource[] = [
     "fileTypes": [
       ".fig"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(303, 60%, 20%), hsl(142, 60%, 10%))",
+    "thumbnailStyle": "hsl(303, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": true,
     "isNew": false,
@@ -689,7 +689,7 @@ export const resources: Resource[] = [
       ".blend",
       ".svg"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(336, 60%, 20%), hsl(253, 60%, 10%))",
+    "thumbnailStyle": "hsl(336, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": true,
     "isNew": false,
@@ -758,7 +758,7 @@ export const resources: Resource[] = [
     "fileTypes": [
       ".svg"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(8, 60%, 20%), hsl(105, 60%, 10%))",
+    "thumbnailStyle": "hsl(8, 30%, 20%)",
     "isFeatured": true,
     "isHandpicked": false,
     "isNew": false,
@@ -828,7 +828,7 @@ export const resources: Resource[] = [
       ".zip",
       ".svg"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(246, 60%, 20%), hsl(324, 60%, 10%))",
+    "thumbnailStyle": "hsl(246, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": true,
     "isNew": true,
@@ -896,7 +896,7 @@ export const resources: Resource[] = [
     "fileTypes": [
       ".fig"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(70, 60%, 20%), hsl(28, 60%, 10%))",
+    "thumbnailStyle": "hsl(70, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": false,
     "isNew": false,
@@ -963,7 +963,7 @@ export const resources: Resource[] = [
     "fileTypes": [
       ".c4d"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(125, 60%, 20%), hsl(323, 60%, 10%))",
+    "thumbnailStyle": "hsl(125, 30%, 20%)",
     "isFeatured": true,
     "isHandpicked": false,
     "isNew": true,
@@ -1032,7 +1032,7 @@ export const resources: Resource[] = [
       ".png",
       ".blend"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(74, 60%, 20%), hsl(84, 60%, 10%))",
+    "thumbnailStyle": "hsl(74, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": false,
     "isNew": false,
@@ -1104,7 +1104,7 @@ export const resources: Resource[] = [
       ".png",
       ".psd"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(97, 60%, 20%), hsl(212, 60%, 10%))",
+    "thumbnailStyle": "hsl(97, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": true,
     "isNew": false,
@@ -1173,7 +1173,7 @@ export const resources: Resource[] = [
       ".psd",
       ".blend"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(312, 60%, 20%), hsl(14, 60%, 10%))",
+    "thumbnailStyle": "hsl(312, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": true,
     "isNew": false,
@@ -1240,7 +1240,7 @@ export const resources: Resource[] = [
     "fileTypes": [
       ".c4d"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(146, 60%, 20%), hsl(336, 60%, 10%))",
+    "thumbnailStyle": "hsl(146, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": false,
     "isNew": false,
@@ -1310,7 +1310,7 @@ export const resources: Resource[] = [
       ".png",
       ".psd"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(172, 60%, 20%), hsl(220, 60%, 10%))",
+    "thumbnailStyle": "hsl(172, 30%, 20%)",
     "isFeatured": true,
     "isHandpicked": true,
     "isNew": false,
@@ -1380,7 +1380,7 @@ export const resources: Resource[] = [
     "fileTypes": [
       ".svg"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(249, 60%, 20%), hsl(41, 60%, 10%))",
+    "thumbnailStyle": "hsl(249, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": false,
     "isNew": false,
@@ -1448,7 +1448,7 @@ export const resources: Resource[] = [
       ".psd",
       ".zip"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(199, 60%, 20%), hsl(266, 60%, 10%))",
+    "thumbnailStyle": "hsl(199, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": true,
     "isNew": false,
@@ -1517,7 +1517,7 @@ export const resources: Resource[] = [
     "fileTypes": [
       ".png"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(282, 60%, 20%), hsl(84, 60%, 10%))",
+    "thumbnailStyle": "hsl(282, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": true,
     "isNew": false,
@@ -1585,7 +1585,7 @@ export const resources: Resource[] = [
     "fileTypes": [
       ".psd"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(2, 60%, 20%), hsl(52, 60%, 10%))",
+    "thumbnailStyle": "hsl(2, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": true,
     "isNew": false,
@@ -1658,7 +1658,7 @@ export const resources: Resource[] = [
       ".ai",
       ".fig"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(244, 60%, 20%), hsl(177, 60%, 10%))",
+    "thumbnailStyle": "hsl(244, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": true,
     "isNew": false,
@@ -1727,7 +1727,7 @@ export const resources: Resource[] = [
       ".svg",
       ".ai"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(137, 60%, 20%), hsl(121, 60%, 10%))",
+    "thumbnailStyle": "hsl(137, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": true,
     "isNew": false,
@@ -1797,7 +1797,7 @@ export const resources: Resource[] = [
       ".png",
       ".c4d"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(147, 60%, 20%), hsl(298, 60%, 10%))",
+    "thumbnailStyle": "hsl(147, 30%, 20%)",
     "isFeatured": true,
     "isHandpicked": false,
     "isNew": false,
@@ -1864,7 +1864,7 @@ export const resources: Resource[] = [
     "fileTypes": [
       ".ai"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(273, 60%, 20%), hsl(171, 60%, 10%))",
+    "thumbnailStyle": "hsl(273, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": false,
     "isNew": false,
@@ -1936,7 +1936,7 @@ export const resources: Resource[] = [
       ".blend",
       ".svg"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(221, 60%, 20%), hsl(344, 60%, 10%))",
+    "thumbnailStyle": "hsl(221, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": false,
     "isNew": false,
@@ -2004,7 +2004,7 @@ export const resources: Resource[] = [
       ".c4d",
       ".blend"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(96, 60%, 20%), hsl(208, 60%, 10%))",
+    "thumbnailStyle": "hsl(96, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": true,
     "isNew": false,
@@ -2074,7 +2074,7 @@ export const resources: Resource[] = [
       ".psd",
       ".png"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(10, 60%, 20%), hsl(112, 60%, 10%))",
+    "thumbnailStyle": "hsl(10, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": true,
     "isNew": false,
@@ -2144,7 +2144,7 @@ export const resources: Resource[] = [
     "fileTypes": [
       ".psd"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(73, 60%, 20%), hsl(90, 60%, 10%))",
+    "thumbnailStyle": "hsl(73, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": true,
     "isNew": true,
@@ -2215,7 +2215,7 @@ export const resources: Resource[] = [
     "fileTypes": [
       ".blend"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(196, 60%, 20%), hsl(185, 60%, 10%))",
+    "thumbnailStyle": "hsl(196, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": false,
     "isNew": false,
@@ -2282,7 +2282,7 @@ export const resources: Resource[] = [
       ".psd",
       ".zip"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(334, 60%, 20%), hsl(95, 60%, 10%))",
+    "thumbnailStyle": "hsl(334, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": false,
     "isNew": false,
@@ -2350,7 +2350,7 @@ export const resources: Resource[] = [
     "fileTypes": [
       ".zip"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(9, 60%, 20%), hsl(125, 60%, 10%))",
+    "thumbnailStyle": "hsl(9, 30%, 20%)",
     "isFeatured": true,
     "isHandpicked": false,
     "isNew": true,
@@ -2418,7 +2418,7 @@ export const resources: Resource[] = [
       ".svg",
       ".blend"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(192, 60%, 20%), hsl(336, 60%, 10%))",
+    "thumbnailStyle": "hsl(192, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": false,
     "isNew": false,
@@ -2489,7 +2489,7 @@ export const resources: Resource[] = [
       ".blend",
       ".ai"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(7, 60%, 20%), hsl(116, 60%, 10%))",
+    "thumbnailStyle": "hsl(7, 30%, 20%)",
     "isFeatured": true,
     "isHandpicked": true,
     "isNew": true,
@@ -2558,7 +2558,7 @@ export const resources: Resource[] = [
       ".psd",
       ".svg"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(69, 60%, 20%), hsl(95, 60%, 10%))",
+    "thumbnailStyle": "hsl(69, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": false,
     "isNew": false,
@@ -2625,7 +2625,7 @@ export const resources: Resource[] = [
     "fileTypes": [
       ".svg"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(250, 60%, 20%), hsl(353, 60%, 10%))",
+    "thumbnailStyle": "hsl(250, 30%, 20%)",
     "isFeatured": true,
     "isHandpicked": false,
     "isNew": false,
@@ -2694,7 +2694,7 @@ export const resources: Resource[] = [
       ".svg",
       ".psd"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(61, 60%, 20%), hsl(104, 60%, 10%))",
+    "thumbnailStyle": "hsl(61, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": true,
     "isNew": false,
@@ -2767,7 +2767,7 @@ export const resources: Resource[] = [
     "fileTypes": [
       ".c4d"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(253, 60%, 20%), hsl(205, 60%, 10%))",
+    "thumbnailStyle": "hsl(253, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": false,
     "isNew": false,
@@ -2835,7 +2835,7 @@ export const resources: Resource[] = [
     "fileTypes": [
       ".c4d"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(218, 60%, 20%), hsl(314, 60%, 10%))",
+    "thumbnailStyle": "hsl(218, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": false,
     "isNew": false,
@@ -2903,7 +2903,7 @@ export const resources: Resource[] = [
     "fileTypes": [
       ".c4d"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(62, 60%, 20%), hsl(113, 60%, 10%))",
+    "thumbnailStyle": "hsl(62, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": false,
     "isNew": false,
@@ -2972,7 +2972,7 @@ export const resources: Resource[] = [
     "fileTypes": [
       ".svg"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(221, 60%, 20%), hsl(201, 60%, 10%))",
+    "thumbnailStyle": "hsl(221, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": false,
     "isNew": true,
@@ -3043,7 +3043,7 @@ export const resources: Resource[] = [
     "fileTypes": [
       ".png"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(324, 60%, 20%), hsl(185, 60%, 10%))",
+    "thumbnailStyle": "hsl(324, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": false,
     "isNew": true,
@@ -3111,7 +3111,7 @@ export const resources: Resource[] = [
     "fileTypes": [
       ".zip"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(52, 60%, 20%), hsl(3, 60%, 10%))",
+    "thumbnailStyle": "hsl(52, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": true,
     "isNew": true,
@@ -3179,7 +3179,7 @@ export const resources: Resource[] = [
     "fileTypes": [
       ".c4d"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(162, 60%, 20%), hsl(208, 60%, 10%))",
+    "thumbnailStyle": "hsl(162, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": true,
     "isNew": false,
@@ -3248,7 +3248,7 @@ export const resources: Resource[] = [
     "fileTypes": [
       ".ai"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(31, 60%, 20%), hsl(111, 60%, 10%))",
+    "thumbnailStyle": "hsl(31, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": true,
     "isNew": false,
@@ -3320,7 +3320,7 @@ export const resources: Resource[] = [
     "fileTypes": [
       ".png"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(292, 60%, 20%), hsl(281, 60%, 10%))",
+    "thumbnailStyle": "hsl(292, 30%, 20%)",
     "isFeatured": true,
     "isHandpicked": true,
     "isNew": false,
@@ -3389,7 +3389,7 @@ export const resources: Resource[] = [
     "fileTypes": [
       ".c4d"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(170, 60%, 20%), hsl(336, 60%, 10%))",
+    "thumbnailStyle": "hsl(170, 30%, 20%)",
     "isFeatured": true,
     "isHandpicked": false,
     "isNew": true,
@@ -3456,7 +3456,7 @@ export const resources: Resource[] = [
       ".zip",
       ".png"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(173, 60%, 20%), hsl(318, 60%, 10%))",
+    "thumbnailStyle": "hsl(173, 30%, 20%)",
     "isFeatured": true,
     "isHandpicked": false,
     "isNew": true,
@@ -3524,7 +3524,7 @@ export const resources: Resource[] = [
     "fileTypes": [
       ".ai"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(127, 60%, 20%), hsl(116, 60%, 10%))",
+    "thumbnailStyle": "hsl(127, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": false,
     "isNew": false,
@@ -3596,7 +3596,7 @@ export const resources: Resource[] = [
       ".ai",
       ".psd"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(162, 60%, 20%), hsl(133, 60%, 10%))",
+    "thumbnailStyle": "hsl(162, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": false,
     "isNew": false,
@@ -3663,7 +3663,7 @@ export const resources: Resource[] = [
     "fileTypes": [
       ".svg"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(83, 60%, 20%), hsl(25, 60%, 10%))",
+    "thumbnailStyle": "hsl(83, 30%, 20%)",
     "isFeatured": true,
     "isHandpicked": true,
     "isNew": false,
@@ -3731,7 +3731,7 @@ export const resources: Resource[] = [
     "fileTypes": [
       ".png"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(123, 60%, 20%), hsl(295, 60%, 10%))",
+    "thumbnailStyle": "hsl(123, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": false,
     "isNew": true,
@@ -3799,7 +3799,7 @@ export const resources: Resource[] = [
       ".png",
       ".zip"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(257, 60%, 20%), hsl(178, 60%, 10%))",
+    "thumbnailStyle": "hsl(257, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": false,
     "isNew": true,
@@ -3870,7 +3870,7 @@ export const resources: Resource[] = [
     "fileTypes": [
       ".svg"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(74, 60%, 20%), hsl(353, 60%, 10%))",
+    "thumbnailStyle": "hsl(74, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": true,
     "isNew": false,
@@ -3937,7 +3937,7 @@ export const resources: Resource[] = [
     "fileTypes": [
       ".psd"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(216, 60%, 20%), hsl(107, 60%, 10%))",
+    "thumbnailStyle": "hsl(216, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": true,
     "isNew": false,
@@ -4006,7 +4006,7 @@ export const resources: Resource[] = [
     "fileTypes": [
       ".zip"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(268, 60%, 20%), hsl(338, 60%, 10%))",
+    "thumbnailStyle": "hsl(268, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": false,
     "isNew": false,
@@ -4074,7 +4074,7 @@ export const resources: Resource[] = [
       ".psd",
       ".ai"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(27, 60%, 20%), hsl(82, 60%, 10%))",
+    "thumbnailStyle": "hsl(27, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": true,
     "isNew": false,
@@ -4144,7 +4144,7 @@ export const resources: Resource[] = [
     "fileTypes": [
       ".ai"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(183, 60%, 20%), hsl(334, 60%, 10%))",
+    "thumbnailStyle": "hsl(183, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": true,
     "isNew": false,
@@ -4214,7 +4214,7 @@ export const resources: Resource[] = [
     "fileTypes": [
       ".fig"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(175, 60%, 20%), hsl(154, 60%, 10%))",
+    "thumbnailStyle": "hsl(175, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": false,
     "isNew": false,
@@ -4281,7 +4281,7 @@ export const resources: Resource[] = [
       ".zip",
       ".svg"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(301, 60%, 20%), hsl(173, 60%, 10%))",
+    "thumbnailStyle": "hsl(301, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": false,
     "isNew": false,
@@ -4347,7 +4347,7 @@ export const resources: Resource[] = [
     "fileTypes": [
       ".blend"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(76, 60%, 20%), hsl(142, 60%, 10%))",
+    "thumbnailStyle": "hsl(76, 30%, 20%)",
     "isFeatured": true,
     "isHandpicked": false,
     "isNew": false,
@@ -4419,7 +4419,7 @@ export const resources: Resource[] = [
     "fileTypes": [
       ".png"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(333, 60%, 20%), hsl(50, 60%, 10%))",
+    "thumbnailStyle": "hsl(333, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": true,
     "isNew": false,
@@ -4486,7 +4486,7 @@ export const resources: Resource[] = [
     "fileTypes": [
       ".png"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(337, 60%, 20%), hsl(125, 60%, 10%))",
+    "thumbnailStyle": "hsl(337, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": false,
     "isNew": false,
@@ -4552,7 +4552,7 @@ export const resources: Resource[] = [
     "fileTypes": [
       ".ai"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(63, 60%, 20%), hsl(63, 60%, 10%))",
+    "thumbnailStyle": "hsl(63, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": true,
     "isNew": true,
@@ -4620,7 +4620,7 @@ export const resources: Resource[] = [
     "fileTypes": [
       ".png"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(55, 60%, 20%), hsl(248, 60%, 10%))",
+    "thumbnailStyle": "hsl(55, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": true,
     "isNew": false,
@@ -4690,7 +4690,7 @@ export const resources: Resource[] = [
     "fileTypes": [
       ".png"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(186, 60%, 20%), hsl(0, 60%, 10%))",
+    "thumbnailStyle": "hsl(186, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": true,
     "isNew": false,
@@ -4757,7 +4757,7 @@ export const resources: Resource[] = [
     "fileTypes": [
       ".psd"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(246, 60%, 20%), hsl(234, 60%, 10%))",
+    "thumbnailStyle": "hsl(246, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": false,
     "isNew": false,
@@ -4827,7 +4827,7 @@ export const resources: Resource[] = [
       ".c4d",
       ".psd"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(67, 60%, 20%), hsl(141, 60%, 10%))",
+    "thumbnailStyle": "hsl(67, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": true,
     "isNew": true,
@@ -4894,7 +4894,7 @@ export const resources: Resource[] = [
     "fileTypes": [
       ".zip"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(108, 60%, 20%), hsl(157, 60%, 10%))",
+    "thumbnailStyle": "hsl(108, 30%, 20%)",
     "isFeatured": true,
     "isHandpicked": true,
     "isNew": false,
@@ -4966,7 +4966,7 @@ export const resources: Resource[] = [
       ".blend",
       ".svg"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(76, 60%, 20%), hsl(64, 60%, 10%))",
+    "thumbnailStyle": "hsl(76, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": true,
     "isNew": false,
@@ -5036,7 +5036,7 @@ export const resources: Resource[] = [
       ".png",
       ".ai"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(340, 60%, 20%), hsl(217, 60%, 10%))",
+    "thumbnailStyle": "hsl(340, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": false,
     "isNew": false,
@@ -5103,7 +5103,7 @@ export const resources: Resource[] = [
     "fileTypes": [
       ".png"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(291, 60%, 20%), hsl(61, 60%, 10%))",
+    "thumbnailStyle": "hsl(291, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": false,
     "isNew": false,
@@ -5169,7 +5169,7 @@ export const resources: Resource[] = [
     "fileTypes": [
       ".ai"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(92, 60%, 20%), hsl(45, 60%, 10%))",
+    "thumbnailStyle": "hsl(92, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": true,
     "isNew": false,
@@ -5243,7 +5243,7 @@ export const resources: Resource[] = [
       ".ai",
       ".c4d"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(118, 60%, 20%), hsl(3, 60%, 10%))",
+    "thumbnailStyle": "hsl(118, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": true,
     "isNew": false,
@@ -5312,7 +5312,7 @@ export const resources: Resource[] = [
       ".ai",
       ".blend"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(103, 60%, 20%), hsl(227, 60%, 10%))",
+    "thumbnailStyle": "hsl(103, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": false,
     "isNew": false,
@@ -5379,7 +5379,7 @@ export const resources: Resource[] = [
       ".fig",
       ".png"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(313, 60%, 20%), hsl(202, 60%, 10%))",
+    "thumbnailStyle": "hsl(313, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": true,
     "isNew": true,
@@ -5449,7 +5449,7 @@ export const resources: Resource[] = [
     "fileTypes": [
       ".blend"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(105, 60%, 20%), hsl(207, 60%, 10%))",
+    "thumbnailStyle": "hsl(105, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": true,
     "isNew": false,
@@ -5520,7 +5520,7 @@ export const resources: Resource[] = [
       ".blend",
       ".c4d"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(21, 60%, 20%), hsl(239, 60%, 10%))",
+    "thumbnailStyle": "hsl(21, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": true,
     "isNew": true,
@@ -5587,7 +5587,7 @@ export const resources: Resource[] = [
     "fileTypes": [
       ".ai"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(86, 60%, 20%), hsl(313, 60%, 10%))",
+    "thumbnailStyle": "hsl(86, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": true,
     "isNew": false,
@@ -5657,7 +5657,7 @@ export const resources: Resource[] = [
     "fileTypes": [
       ".blend"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(41, 60%, 20%), hsl(241, 60%, 10%))",
+    "thumbnailStyle": "hsl(41, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": false,
     "isNew": false,
@@ -5723,7 +5723,7 @@ export const resources: Resource[] = [
     "fileTypes": [
       ".ai"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(123, 60%, 20%), hsl(83, 60%, 10%))",
+    "thumbnailStyle": "hsl(123, 30%, 20%)",
     "isFeatured": true,
     "isHandpicked": true,
     "isNew": false,
@@ -5795,7 +5795,7 @@ export const resources: Resource[] = [
       ".ai",
       ".png"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(282, 60%, 20%), hsl(276, 60%, 10%))",
+    "thumbnailStyle": "hsl(282, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": false,
     "isNew": false,
@@ -5863,7 +5863,7 @@ export const resources: Resource[] = [
       ".fig",
       ".ai"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(246, 60%, 20%), hsl(42, 60%, 10%))",
+    "thumbnailStyle": "hsl(246, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": false,
     "isNew": false,
@@ -5931,7 +5931,7 @@ export const resources: Resource[] = [
     "fileTypes": [
       ".png"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(277, 60%, 20%), hsl(335, 60%, 10%))",
+    "thumbnailStyle": "hsl(277, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": true,
     "isNew": false,
@@ -5999,7 +5999,7 @@ export const resources: Resource[] = [
       ".blend",
       ".psd"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(77, 60%, 20%), hsl(303, 60%, 10%))",
+    "thumbnailStyle": "hsl(77, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": false,
     "isNew": false,
@@ -6071,7 +6071,7 @@ export const resources: Resource[] = [
       ".png",
       ".blend"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(255, 60%, 20%), hsl(187, 60%, 10%))",
+    "thumbnailStyle": "hsl(255, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": true,
     "isNew": false,
@@ -6138,7 +6138,7 @@ export const resources: Resource[] = [
     "fileTypes": [
       ".psd"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(68, 60%, 20%), hsl(223, 60%, 10%))",
+    "thumbnailStyle": "hsl(68, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": false,
     "isNew": false,
@@ -6205,7 +6205,7 @@ export const resources: Resource[] = [
     "fileTypes": [
       ".ai"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(182, 60%, 20%), hsl(48, 60%, 10%))",
+    "thumbnailStyle": "hsl(182, 30%, 20%)",
     "isFeatured": true,
     "isHandpicked": true,
     "isNew": false,
@@ -6275,7 +6275,7 @@ export const resources: Resource[] = [
       ".zip",
       ".png"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(109, 60%, 20%), hsl(135, 60%, 10%))",
+    "thumbnailStyle": "hsl(109, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": true,
     "isNew": false,
@@ -6346,7 +6346,7 @@ export const resources: Resource[] = [
     "fileTypes": [
       ".ai"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(126, 60%, 20%), hsl(248, 60%, 10%))",
+    "thumbnailStyle": "hsl(126, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": true,
     "isNew": false,
@@ -6413,7 +6413,7 @@ export const resources: Resource[] = [
     "fileTypes": [
       ".blend"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(106, 60%, 20%), hsl(140, 60%, 10%))",
+    "thumbnailStyle": "hsl(106, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": true,
     "isNew": false,
@@ -6481,7 +6481,7 @@ export const resources: Resource[] = [
     "fileTypes": [
       ".c4d"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(35, 60%, 20%), hsl(136, 60%, 10%))",
+    "thumbnailStyle": "hsl(35, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": true,
     "isNew": false,
@@ -6550,7 +6550,7 @@ export const resources: Resource[] = [
     "fileTypes": [
       ".fig"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(9, 60%, 20%), hsl(168, 60%, 10%))",
+    "thumbnailStyle": "hsl(9, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": false,
     "isNew": false,
@@ -6620,7 +6620,7 @@ export const resources: Resource[] = [
       ".psd",
       ".fig"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(16, 60%, 20%), hsl(109, 60%, 10%))",
+    "thumbnailStyle": "hsl(16, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": false,
     "isNew": false,
@@ -6687,7 +6687,7 @@ export const resources: Resource[] = [
     "fileTypes": [
       ".ai"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(230, 60%, 20%), hsl(86, 60%, 10%))",
+    "thumbnailStyle": "hsl(230, 30%, 20%)",
     "isFeatured": true,
     "isHandpicked": true,
     "isNew": false,
@@ -6755,7 +6755,7 @@ export const resources: Resource[] = [
       ".psd",
       ".c4d"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(198, 60%, 20%), hsl(90, 60%, 10%))",
+    "thumbnailStyle": "hsl(198, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": true,
     "isNew": false,
@@ -6824,7 +6824,7 @@ export const resources: Resource[] = [
     "fileTypes": [
       ".psd"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(278, 60%, 20%), hsl(112, 60%, 10%))",
+    "thumbnailStyle": "hsl(278, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": true,
     "isNew": false,
@@ -6895,7 +6895,7 @@ export const resources: Resource[] = [
     "fileTypes": [
       ".ai"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(290, 60%, 20%), hsl(92, 60%, 10%))",
+    "thumbnailStyle": "hsl(290, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": false,
     "isNew": false,
@@ -6964,7 +6964,7 @@ export const resources: Resource[] = [
       ".ai",
       ".psd"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(291, 60%, 20%), hsl(249, 60%, 10%))",
+    "thumbnailStyle": "hsl(291, 30%, 20%)",
     "isFeatured": true,
     "isHandpicked": true,
     "isNew": false,
@@ -7033,7 +7033,7 @@ export const resources: Resource[] = [
     "fileTypes": [
       ".zip"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(42, 60%, 20%), hsl(160, 60%, 10%))",
+    "thumbnailStyle": "hsl(42, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": true,
     "isNew": true,
@@ -7102,7 +7102,7 @@ export const resources: Resource[] = [
       ".ai",
       ".blend"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(23, 60%, 20%), hsl(37, 60%, 10%))",
+    "thumbnailStyle": "hsl(23, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": false,
     "isNew": false,
@@ -7172,7 +7172,7 @@ export const resources: Resource[] = [
       ".zip",
       ".png"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(288, 60%, 20%), hsl(174, 60%, 10%))",
+    "thumbnailStyle": "hsl(288, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": true,
     "isNew": true,
@@ -7240,7 +7240,7 @@ export const resources: Resource[] = [
     "fileTypes": [
       ".svg"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(49, 60%, 20%), hsl(51, 60%, 10%))",
+    "thumbnailStyle": "hsl(49, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": true,
     "isNew": true,
@@ -7309,7 +7309,7 @@ export const resources: Resource[] = [
     "fileTypes": [
       ".blend"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(62, 60%, 20%), hsl(332, 60%, 10%))",
+    "thumbnailStyle": "hsl(62, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": false,
     "isNew": true,
@@ -7377,7 +7377,7 @@ export const resources: Resource[] = [
     "fileTypes": [
       ".fig"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(196, 60%, 20%), hsl(73, 60%, 10%))",
+    "thumbnailStyle": "hsl(196, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": false,
     "isNew": false,
@@ -7446,7 +7446,7 @@ export const resources: Resource[] = [
     "fileTypes": [
       ".fig"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(218, 60%, 20%), hsl(66, 60%, 10%))",
+    "thumbnailStyle": "hsl(218, 30%, 20%)",
     "isFeatured": true,
     "isHandpicked": true,
     "isNew": false,
@@ -7515,7 +7515,7 @@ export const resources: Resource[] = [
     "fileTypes": [
       ".psd"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(144, 60%, 20%), hsl(153, 60%, 10%))",
+    "thumbnailStyle": "hsl(144, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": true,
     "isNew": false,
@@ -7585,7 +7585,7 @@ export const resources: Resource[] = [
       ".png",
       ".svg"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(86, 60%, 20%), hsl(279, 60%, 10%))",
+    "thumbnailStyle": "hsl(86, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": true,
     "isNew": false,
@@ -7652,7 +7652,7 @@ export const resources: Resource[] = [
     "fileTypes": [
       ".png"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(109, 60%, 20%), hsl(220, 60%, 10%))",
+    "thumbnailStyle": "hsl(109, 30%, 20%)",
     "isFeatured": true,
     "isHandpicked": true,
     "isNew": false,
@@ -7723,7 +7723,7 @@ export const resources: Resource[] = [
     "fileTypes": [
       ".blend"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(92, 60%, 20%), hsl(132, 60%, 10%))",
+    "thumbnailStyle": "hsl(92, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": true,
     "isNew": true,
@@ -7791,7 +7791,7 @@ export const resources: Resource[] = [
     "fileTypes": [
       ".blend"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(290, 60%, 20%), hsl(52, 60%, 10%))",
+    "thumbnailStyle": "hsl(290, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": false,
     "isNew": false,
@@ -7859,7 +7859,7 @@ export const resources: Resource[] = [
     "fileTypes": [
       ".psd"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(90, 60%, 20%), hsl(164, 60%, 10%))",
+    "thumbnailStyle": "hsl(90, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": false,
     "isNew": false,
@@ -7928,7 +7928,7 @@ export const resources: Resource[] = [
       ".psd",
       ".blend"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(206, 60%, 20%), hsl(215, 60%, 10%))",
+    "thumbnailStyle": "hsl(206, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": true,
     "isNew": false,
@@ -7998,7 +7998,7 @@ export const resources: Resource[] = [
     "fileTypes": [
       ".zip"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(160, 60%, 20%), hsl(340, 60%, 10%))",
+    "thumbnailStyle": "hsl(160, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": true,
     "isNew": false,
@@ -8066,7 +8066,7 @@ export const resources: Resource[] = [
       ".zip",
       ".svg"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(354, 60%, 20%), hsl(206, 60%, 10%))",
+    "thumbnailStyle": "hsl(354, 30%, 20%)",
     "isFeatured": true,
     "isHandpicked": true,
     "isNew": false,
@@ -8134,7 +8134,7 @@ export const resources: Resource[] = [
     "fileTypes": [
       ".blend"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(22, 60%, 20%), hsl(209, 60%, 10%))",
+    "thumbnailStyle": "hsl(22, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": false,
     "isNew": true,
@@ -8203,7 +8203,7 @@ export const resources: Resource[] = [
       ".blend",
       ".c4d"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(284, 60%, 20%), hsl(342, 60%, 10%))",
+    "thumbnailStyle": "hsl(284, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": true,
     "isNew": false,
@@ -8275,7 +8275,7 @@ export const resources: Resource[] = [
     "fileTypes": [
       ".c4d"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(228, 60%, 20%), hsl(246, 60%, 10%))",
+    "thumbnailStyle": "hsl(228, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": true,
     "isNew": true,
@@ -8345,7 +8345,7 @@ export const resources: Resource[] = [
     "fileTypes": [
       ".zip"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(183, 60%, 20%), hsl(319, 60%, 10%))",
+    "thumbnailStyle": "hsl(183, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": false,
     "isNew": true,
@@ -8412,7 +8412,7 @@ export const resources: Resource[] = [
       ".zip",
       ".psd"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(25, 60%, 20%), hsl(88, 60%, 10%))",
+    "thumbnailStyle": "hsl(25, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": true,
     "isNew": false,
@@ -8481,7 +8481,7 @@ export const resources: Resource[] = [
       ".png",
       ".c4d"
     ],
-    "thumbnailStyle": "linear-gradient(135deg, hsl(252, 60%, 20%), hsl(79, 60%, 10%))",
+    "thumbnailStyle": "hsl(252, 30%, 20%)",
     "isFeatured": false,
     "isHandpicked": false,
     "isNew": false,

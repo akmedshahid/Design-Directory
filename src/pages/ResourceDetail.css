@@ -101,7 +101,7 @@
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   padding: 6px 12px;
-  border-radius: 20px;
+  border-radius: 8px;
   font-size: 12px;
   font-weight: 500;
   color: var(--text-primary);
@@ -305,7 +305,7 @@
   padding: 6px 12px;
   background-color: var(--bg-surface);
   border: 1px solid var(--border-subtle);
-  border-radius: 20px;
+  border-radius: 8px;
   font-size: 13px;
   color: var(--text-secondary);
 }
@@ -511,7 +511,7 @@
   top: 96px; /* Below TopBar + spacing */
   background-color: var(--bg-surface);
   border: 1px solid var(--border-subtle);
-  border-radius: 20px;
+  border-radius: 8px;
   padding: 24px;
   display: flex;
   flex-direction: column;

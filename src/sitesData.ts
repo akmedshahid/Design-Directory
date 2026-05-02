@@ -201,7 +201,7 @@ const createSite = (data: Partial<Site>): Site => ({
   shortDescription: data.shortDescription || 'A useful site for design and development.',
   url: data.url || 'https://example.com',
   domain: data.domain || 'example.com',
-  screenshotStyle: data.screenshotStyle || 'linear-gradient(135deg, hsl(210, 60%, 20%), hsl(220, 60%, 10%))',
+  screenshotStyle: data.screenshotStyle || 'hsl(210, 30%, 20%)',
   category: data.category || 'Asset Libraries',
   categorySlug: data.categorySlug || data.category?.toLowerCase().replace(/\s+/g, '-') || 'asset-libraries',
   subcategory: data.subcategory || 'Mockups',
@@ -260,7 +260,7 @@ export const sites: Site[] = [
     frequency: 'Daily',
     rating: 4.9,
     qualityScore: 98,
-    screenshotStyle: 'linear-gradient(135deg, hsl(10, 80%, 20%), hsl(30, 80%, 10%))',
+    screenshotStyle: 'hsl(10, 40%, 20%)',
     useCases: ['Finding plugins', 'Downloading UI kits', 'Inspiration'],
     bestFor: ['Figma users', 'Product designers'],
     strengths: ['Massive library', 'Official platform', 'One-click install'],
@@ -287,7 +287,7 @@ export const sites: Site[] = [
     frequency: 'Weekly',
     rating: 4.8,
     qualityScore: 95,
-    screenshotStyle: 'linear-gradient(135deg, hsl(220, 10%, 15%), hsl(220, 10%, 5%))',
+    screenshotStyle: 'hsl(220, 5%, 15%)',
     useCases: ['UI research', 'UX flows', 'Competitor analysis'],
   }),
   createSite({
@@ -306,7 +306,7 @@ export const sites: Site[] = [
     frequency: 'Weekly',
     rating: 4.6,
     qualityScore: 92,
-    screenshotStyle: 'linear-gradient(135deg, hsl(0, 0%, 20%), hsl(0, 0%, 0%))',
+    screenshotStyle: 'hsl(0, 0%, 20%)',
     useCases: ['Visual inspiration', 'Trend spotting', 'Agency discovery'],
   }),
   createSite({
@@ -329,7 +329,7 @@ export const sites: Site[] = [
     frequency: 'Monthly',
     rating: 4.7,
     qualityScore: 94,
-    screenshotStyle: 'linear-gradient(135deg, hsl(260, 60%, 20%), hsl(280, 60%, 10%))',
+    screenshotStyle: 'hsl(260, 30%, 20%)',
     useCases: ['Purchasing UI kits', 'Premium mockups', '3D assets'],
   }),
   createSite({
@@ -348,7 +348,7 @@ export const sites: Site[] = [
     frequency: 'Weekly',
     rating: 4.9,
     qualityScore: 96,
-    screenshotStyle: 'linear-gradient(135deg, hsl(200, 60%, 20%), hsl(220, 60%, 10%))',
+    screenshotStyle: 'hsl(200, 30%, 20%)',
     useCases: ['Web design inspiration', 'Motion design reference'],
   }),
   createSite({
@@ -374,7 +374,7 @@ export const sites: Site[] = [
     frequency: 'Daily',
     rating: 4.9,
     qualityScore: 99,
-    screenshotStyle: 'linear-gradient(135deg, hsl(0, 0%, 10%), hsl(0, 0%, 0%))',
+    screenshotStyle: 'hsl(0, 0%, 10%)',
     useCases: ['Hosting projects', 'Analytics', 'CI/CD'],
   }),
   createSite({
@@ -397,7 +397,7 @@ export const sites: Site[] = [
     frequency: 'Weekly',
     rating: 4.8,
     qualityScore: 95,
-    screenshotStyle: 'linear-gradient(135deg, hsl(320, 60%, 20%), hsl(340, 60%, 10%))',
+    screenshotStyle: 'hsl(320, 30%, 20%)',
     useCases: ['Creating 3D scenes', 'Web interactions', 'Exporting to code'],
   }),
   createSite({
@@ -422,7 +422,7 @@ export const sites: Site[] = [
     frequency: 'Daily',
     rating: 4.9,
     qualityScore: 97,
-    screenshotStyle: 'linear-gradient(135deg, hsl(280, 40%, 20%), hsl(300, 40%, 10%))',
+    screenshotStyle: 'hsl(280, 20%, 20%)',
     useCases: ['Concept art', 'Stock photo alternatives', 'Texture generation'],
   }),
   createSite({
@@ -441,7 +441,7 @@ export const sites: Site[] = [
     frequency: 'Monthly',
     rating: 4.7,
     qualityScore: 93,
-    screenshotStyle: 'linear-gradient(135deg, hsl(40, 30%, 20%), hsl(40, 30%, 10%))',
+    screenshotStyle: 'hsl(40, 15%, 20%)',
     useCases: ['Font pairing', 'Typography trends', 'Finding foundries'],
   }),
   createSite({
@@ -465,7 +465,7 @@ export const sites: Site[] = [
     frequency: 'Weekly',
     rating: 4.9,
     qualityScore: 99,
-    screenshotStyle: 'linear-gradient(135deg, hsl(240, 70%, 30%), hsl(240, 70%, 15%))',
+    screenshotStyle: 'hsl(240, 35%, 30%)',
     useCases: ['Payment processing', 'Invoicing', 'Financial reports'],
   }),
   createSite({
@@ -480,7 +480,7 @@ export const sites: Site[] = [
     tags: ['inspiration', 'web design', 'gallery'],
     accessType: 'Free',
     rating: 4.8,
-    screenshotStyle: 'linear-gradient(135deg, hsl(200, 30%, 15%), hsl(200, 30%, 5%))',
+    screenshotStyle: 'hsl(200, 15%, 15%)',
   }),
   createSite({
     id: 's-13',
@@ -495,7 +495,7 @@ export const sites: Site[] = [
     accessType: 'Freemium',
     hasLogin: true,
     rating: 4.9,
-    screenshotStyle: 'linear-gradient(135deg, hsl(0, 0%, 20%), hsl(0, 0%, 5%))',
+    screenshotStyle: 'hsl(0, 0%, 20%)',
   }),
   createSite({
     id: 's-14',
@@ -514,7 +514,7 @@ export const sites: Site[] = [
     username: 'designer@example.com',
     passwordMasked: 'hidden',
     rating: 4.8,
-    screenshotStyle: 'linear-gradient(135deg, hsl(210, 80%, 60%), hsl(280, 80%, 50%))',
+    screenshotStyle: 'hsl(210, 40%, 60%)',
   }),
   createSite({
     id: 's-15',
@@ -529,7 +529,7 @@ export const sites: Site[] = [
     accessType: 'Freemium',
     hasLogin: true,
     rating: 4.7,
-    screenshotStyle: 'linear-gradient(135deg, hsl(170, 70%, 40%), hsl(190, 70%, 30%))',
+    screenshotStyle: 'hsl(170, 35%, 40%)',
   }),
   createSite({
     id: 's-16',
@@ -544,7 +544,7 @@ export const sites: Site[] = [
     accessType: 'Freemium',
     hasLogin: true,
     rating: 4.8,
-    screenshotStyle: 'linear-gradient(135deg, hsl(340, 70%, 50%), hsl(360, 70%, 40%))',
+    screenshotStyle: 'hsl(340, 35%, 50%)',
   }),
   createSite({
     id: 's-17',
@@ -563,7 +563,7 @@ export const sites: Site[] = [
     username: 'team@example.com',
     passwordMasked: 'hidden',
     rating: 4.9,
-    screenshotStyle: 'linear-gradient(135deg, hsl(0, 0%, 95%), hsl(0, 0%, 90%))',
+    screenshotStyle: 'hsl(0, 0%, 95%)',
   }),
   createSite({
     id: 's-18',
@@ -579,6 +579,6 @@ export const sites: Site[] = [
     accountRequired: true,
     hasLogin: true,
     rating: 4.8,
-    screenshotStyle: 'linear-gradient(135deg, hsl(150, 60%, 30%), hsl(150, 60%, 15%))',
+    screenshotStyle: 'hsl(150, 30%, 30%)',
   })
 ];

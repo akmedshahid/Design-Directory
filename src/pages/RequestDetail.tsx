@@ -121,7 +121,7 @@ const RequestDetail = () => {
       <div className="gh-req-detail-layout" style={{ marginTop: 28 }}>
         <div className="gh-req-main-content">
           <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap', marginBottom: 18 }}>
-            <span className={`gh-status-badge ${request.status === 'closed' ? 'found' : request.status}`}>
+            <span className={`gh-status-badge ${request.status === 'Closed' ? 'Fulfilled' : request.status}`}>
               {statusText(request.status)}
             </span>
             <span className={`gh-priority-badge ${request.priority}`}>{request.priority}</span>
@@ -321,7 +321,7 @@ const RequestDetail = () => {
               </div>
               <div className="gh-meta-row">
                 <span className="label">Status</span>
-                <span className={`value gh-status-text ${request.status === 'closed' ? 'found' : request.status}`}>
+                <span className={`value gh-status-text ${request.status === 'Closed' ? 'Fulfilled' : request.status}`}>
                   {statusText(request.status)}
                 </span>
               </div>

@@ -35,7 +35,7 @@
 .gb-rules-section {
   background: var(--bg-surface);
   border: 1px solid var(--border-subtle);
-  border-radius: 16px;
+  border-radius: 8px;
   padding: 32px;
 }
 

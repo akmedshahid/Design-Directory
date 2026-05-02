@@ -1,6 +1,5 @@
 .gb-home-page {
-  padding-top: 32px;
-  padding-bottom: 48px;
+  padding: 24px;
   height: 100%;
   overflow-y: auto;
 }
@@ -9,7 +8,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-bottom: 28px;
+  margin-bottom: 20px;
   max-width: 600px;
 }
 
@@ -27,9 +26,9 @@
 }
 
 .gb-overview-header h1 {
-  font-size: 28px;
+  font-size: 22px;
   font-weight: 700;
-  letter-spacing: -0.5px;
+  letter-spacing: -0.3px;
   color: var(--text-primary);
   margin: 0 0 12px;
 }
@@ -50,22 +49,22 @@
 .gb-summary-strip {
   display: flex;
   gap: 16px;
-  margin-bottom: 48px;
+  margin-bottom: 28px;
 }
 
 .gb-summary-item {
   flex: 1;
   background: var(--bg-surface);
   border: 1px solid var(--border-subtle);
-  border-radius: 12px;
-  padding: 20px;
+  border-radius: 8px;
+  padding: 16px;
   display: flex;
   flex-direction: column;
   gap: 4px;
 }
 
 .gb-summary-val {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 700;
   color: var(--text-primary);
 }
@@ -82,7 +81,7 @@
 .gb-home-sections {
   display: flex;
   flex-direction: column;
-  gap: 48px;
+  gap: 32px;
 }
 
 .gb-section-header {
@@ -93,7 +92,7 @@
 }
 
 .gb-section-header h2 {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 600;
   color: var(--text-primary);
   margin: 0;
@@ -113,7 +112,7 @@
 .gb-card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 20px;
+  gap: 16px;
 }
 
 .gb-list-container {

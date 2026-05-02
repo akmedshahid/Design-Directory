@@ -98,7 +98,7 @@
   gap: 20px;
   background: var(--bg-surface);
   border: 1px solid var(--border-subtle);
-  border-radius: 16px;
+  border-radius: 8px;
   padding: 24px;
   transition: all 0.2s ease;
 }
@@ -292,7 +292,7 @@
   padding: 60px;
   background: rgba(255, 255, 255, 0.02);
   border: 1px dashed var(--border-subtle);
-  border-radius: 16px;
+  border-radius: 8px;
   text-align: center;
 }
 
