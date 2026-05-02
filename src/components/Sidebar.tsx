@@ -1,17 +1,11 @@
 import React, { useState } from 'react';
 import { Link, NavLink, useLocation, useNavigate } from 'react-router-dom';
 import {
-  Home, Globe, Search, Bookmark, Library, PlusCircle, Settings,
+  Home, Globe, PlusCircle, Settings,
   ShieldAlert, ChevronRight, FolderClosed, Compass, ShoppingBag,
-  Sparkles, Bell, MessageSquareText, Users, Hash,
-  Layers, Activity, CalendarClock, Play, CheckCircle2,
-  UserCircle, CreditCard,
 } from 'lucide-react';
 import { tree, resources } from '../data';
 import { sitesTree, sites } from '../sitesData';
-import { greatHallRooms } from '../data/greatHallData';
-import { mockGroupBuys } from '../data/groupBuysData';
-import { useAuth } from '../context/AuthContext';
 import './Sidebar.css';
 
 type ActiveSection = 'resources' | 'sites' | 'great-hall' | 'group-buys' | 'utility';
@@ -20,7 +14,6 @@ const Sidebar = () => {
   const [expandedCats, setExpandedCats] = useState<Record<string, boolean>>({});
   const location = useLocation();
   const navigate = useNavigate();
-  const { user } = useAuth();
 
   const getActiveSection = (): ActiveSection => {
     const path = location.pathname;
@@ -77,138 +70,6 @@ const Sidebar = () => {
 
   const totalItems = activeItems.length;
   const sectionTitle = isSitesActive ? 'Site Library' : 'Resource Library';
-
-  const onlineCount = greatHallRooms.reduce((total, room) => total + room.onlineCount, 0);
-  const activeGBCount = mockGroupBuys.filter(gb => gb.status === 'Active' || gb.status === 'Collecting Payments').length;
-  const requestsGBCount = mockGroupBuys.filter(gb => gb.status === 'Requested' || gb.status === 'Under Review' || gb.status === 'Voting').length;
-
-  const renderGreatHallNav = () => (
-    <div className="tree-section">
-      <div className="section-header-row">
-        <div className="section-title">Great Hall</div>
-        <div className="section-count online-indicator">{onlineCount} online</div>
-      </div>
-
-      <div className="context-nav-list">
-        <NavLink to="/app/great-hall" end className={({isActive}) => `context-nav-item ${isActive ? 'active' : ''}`}>
-          <Sparkles size={15} />
-          <span>Hall Home</span>
-        </NavLink>
-        <NavLink to="/app/great-hall/requests" className={({isActive}) => `context-nav-item ${isActive ? 'active' : ''}`}>
-          <Bell size={15} />
-          <span>Requests</span>
-        </NavLink>
-        <NavLink to="/app/great-hall/dm" className={({isActive}) => `context-nav-item ${isActive ? 'active' : ''}`}>
-          <MessageSquareText size={15} />
-          <span>Messages</span>
-        </NavLink>
-        <NavLink to="/app/great-hall/members" className={({isActive}) => `context-nav-item ${isActive ? 'active' : ''}`}>
-          <Users size={15} />
-          <span>Members</span>
-        </NavLink>
-        <NavLink to="/app/great-hall/saved" className={({isActive}) => `context-nav-item ${isActive ? 'active' : ''}`}>
-          <Bookmark size={15} />
-          <span>Saved</span>
-        </NavLink>
-        <NavLink to="/app/great-hall/notifications" className={({isActive}) => `context-nav-item ${isActive ? 'active' : ''}`}>
-          <Bell size={15} />
-          <span>Notifications</span>
-        </NavLink>
-      </div>
-
-      <div className="context-nav-divider" />
-
-      <div className="section-header-row">
-        <div className="section-title">Rooms</div>
-        <div className="section-count">{greatHallRooms.length}</div>
-      </div>
-      <div className="context-nav-list">
-        {greatHallRooms.map((room) => (
-          <NavLink
-            key={room.id}
-            to={`/app/great-hall/rooms/${room.id}`}
-            className={({isActive}) => `context-nav-item room-item ${isActive ? 'active' : ''}`}
-          >
-            <div className="room-icon-mini" style={{ background: room.accent }}>
-              {room.iconLabel}
-            </div>
-            <span>{room.name}</span>
-            {room.unreadCount > 0 && <span className="nav-badge">{room.unreadCount}</span>}
-            {room.access !== 'Open' && <span className="access-pill">{room.access}</span>}
-          </NavLink>
-        ))}
-      </div>
-    </div>
-  );
-
-  const renderGroupBuysNav = () => (
-    <div className="tree-section">
-      <div className="section-header-row">
-        <div className="section-title">Group-Buys</div>
-        <div className="section-count">{mockGroupBuys.length} total</div>
-      </div>
-
-      <div className="context-nav-list">
-        <NavLink to="/app/group-buys" end className={({isActive}) => `context-nav-item ${isActive ? 'active' : ''}`}>
-          <Layers size={15} />
-          <span>Overview</span>
-        </NavLink>
-        <NavLink to="/app/group-buys/requests" className={({isActive}) => `context-nav-item ${isActive ? 'active' : ''}`}>
-          <Activity size={15} />
-          <span>Requests & Voting</span>
-          {requestsGBCount > 0 && <span className="nav-badge">{requestsGBCount}</span>}
-        </NavLink>
-        <NavLink to="/app/group-buys/scheduled" className={({isActive}) => `context-nav-item ${isActive ? 'active' : ''}`}>
-          <CalendarClock size={15} />
-          <span>Scheduled</span>
-        </NavLink>
-        <NavLink to="/app/group-buys/active" className={({isActive}) => `context-nav-item ${isActive ? 'active' : ''}`}>
-          <Play size={15} />
-          <span>Active Buys</span>
-          {activeGBCount > 0 && <span className="nav-badge accent">{activeGBCount}</span>}
-        </NavLink>
-        <NavLink to="/app/group-buys/completed" className={({isActive}) => `context-nav-item ${isActive ? 'active' : ''}`}>
-          <CheckCircle2 size={15} />
-          <span>Completed</span>
-        </NavLink>
-      </div>
-
-      <div className="context-nav-divider" />
-
-      <div className="section-header-row">
-        <div className="section-title">Personal</div>
-      </div>
-      <div className="context-nav-list">
-        <NavLink to="/app/group-buys/mine" className={({isActive}) => `context-nav-item ${isActive ? 'active' : ''}`}>
-          <UserCircle size={15} />
-          <span>My Participation</span>
-        </NavLink>
-        <NavLink to="/app/group-buys/payments" className={({isActive}) => `context-nav-item ${isActive ? 'active' : ''}`}>
-          <CreditCard size={15} />
-          <span>My Payments</span>
-        </NavLink>
-        <NavLink to="/app/group-buys/rules" className={({isActive}) => `context-nav-item ${isActive ? 'active' : ''}`}>
-          <ShieldAlert size={15} />
-          <span>Rules & Legal</span>
-        </NavLink>
-      </div>
-
-      {user?.role === 'Admin' && (
-        <>
-          <div className="context-nav-divider" />
-          <div className="section-header-row">
-            <div className="section-title">Admin</div>
-          </div>
-          <div className="context-nav-list">
-            <NavLink to="/app/group-buys/admin" className={({isActive}) => `context-nav-item ${isActive ? 'active' : ''}`}>
-              <Settings size={15} />
-              <span>Admin Review</span>
-            </NavLink>
-          </div>
-        </>
-      )}
-    </div>
-  );
 
   const renderLibraryTree = () => (
     <div className="tree-section">
@@ -303,27 +164,9 @@ const Sidebar = () => {
             <ShoppingBag size={16} />
             <span className="nav-label">Group-Buys</span>
           </NavLink>
-
-          <div className="nav-divider" />
-
-          <NavLink to="/app/search" className={({isActive}) => `nav-item ${isActive ? 'active' : ''}`}>
-            <Search size={16} />
-            <span className="nav-label">Search</span>
-          </NavLink>
-          <NavLink to="/app/bookmarks" className={({isActive}) => `nav-item ${isActive ? 'active' : ''}`}>
-            <Bookmark size={16} />
-            <span className="nav-label">Bookmarks</span>
-            <span className="nav-count">{resources.filter(r => r.isBookmarked).length + sites.filter(s => s.isBookmarked).length || ''}</span>
-          </NavLink>
-          <NavLink to="/app/collections" className={({isActive}) => `nav-item ${isActive ? 'active' : ''}`}>
-            <Library size={16} />
-            <span className="nav-label">Collections</span>
-          </NavLink>
         </div>
 
         {showLibraryTree && renderLibraryTree()}
-        {isGreatHallActive && renderGreatHallNav()}
-        {isGroupBuysActive && renderGroupBuysNav()}
       </div>
 
       <div className="sidebar-footer">

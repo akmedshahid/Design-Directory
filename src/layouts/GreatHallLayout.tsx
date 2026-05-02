@@ -1,5 +1,8 @@
 import React from 'react';
-import { Outlet } from 'react-router-dom';
+import { NavLink, Outlet, useLocation } from 'react-router-dom';
+import {
+  Sparkles, Bell, MessageSquareText, Users, Bookmark, Hash,
+} from 'lucide-react';
 import { useAuth, type PlanType } from '../context/AuthContext';
 import { mockMembers, greatHallRooms, type GreatHallAccess } from '../data/greatHallData';
 import './GreatHallLayout.css';
@@ -48,9 +51,39 @@ export const findMemberById = (memberId: string) => mockMembers[memberId] ?? nul
 export const findRoomById = (roomId: string) =>
   greatHallRooms.find((room) => room.id === roomId) ?? null;
 
+const GH_TABS = [
+  { to: '/app/great-hall', label: 'Home', icon: Sparkles, end: true },
+  { to: '/app/great-hall/requests', label: 'Requests', icon: Bell },
+  { to: '/app/great-hall/dm', label: 'Messages', icon: MessageSquareText },
+  { to: '/app/great-hall/members', label: 'Members', icon: Users },
+  { to: '/app/great-hall/rooms', label: 'Rooms', icon: Hash },
+  { to: '/app/great-hall/saved', label: 'Saved', icon: Bookmark },
+  { to: '/app/great-hall/notifications', label: 'Notifications', icon: Bell },
+] as const;
+
 const GreatHallLayout = () => {
+  const location = useLocation();
+
   return (
     <div className="great-hall-layout">
+      <nav className="section-tabs">
+        {GH_TABS.map(({ to, label, icon: Icon, end }) => {
+          const isRoomDetail = to === '/app/great-hall/rooms' && location.pathname.startsWith('/app/great-hall/rooms/');
+          return (
+            <NavLink
+              key={to}
+              to={to}
+              end={end}
+              className={({ isActive }) =>
+                `section-tab ${isActive || isRoomDetail ? 'active' : ''}`
+              }
+            >
+              <Icon size={14} />
+              <span>{label}</span>
+            </NavLink>
+          );
+        })}
+      </nav>
       <section className="gh-main-content">
         <Outlet />
       </section>
