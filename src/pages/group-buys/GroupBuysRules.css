@@ -1,0 +1,83 @@
+.gb-rules-page {
+  padding-top: 60px;
+  padding-bottom: 80px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.gb-rules-header {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.gb-rules-header h1 {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0 0 16px;
+  letter-spacing: -0.5px;
+}
+
+.gb-rules-header p {
+  font-size: 18px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.gb-rules-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.gb-rules-section {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: 16px;
+  padding: 32px;
+}
+
+.gb-rules-section h2 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0 0 20px;
+}
+
+.gb-rules-section p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin: 0 0 16px;
+}
+
+.gb-rules-section p:last-child {
+  margin-bottom: 0;
+}
+
+.gb-rules-section ul,
+.gb-rules-section ol {
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin: 0 0 16px;
+  padding-left: 24px;
+}
+
+.gb-rules-section li {
+  margin-bottom: 8px;
+}
+
+.gb-rules-section li:last-child {
+  margin-bottom: 0;
+}
+
+.gb-rules-section strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}

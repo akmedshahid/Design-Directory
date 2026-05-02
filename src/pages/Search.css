@@ -1,0 +1,133 @@
+.search-page {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Search Panel */
+.search-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  max-width: 640px;
+  margin: 0 auto 32px auto;
+  width: 100%;
+}
+
+.sp-input-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.sp-icon {
+  position: absolute;
+  left: 16px;
+  color: var(--text-muted);
+}
+
+.sp-input {
+  width: 100%;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: 16px;
+  padding: 16px 48px 16px 48px;
+  font-size: 16px;
+  color: var(--text-primary);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  transition: all var(--transition-fast);
+}
+
+.sp-input:focus {
+  outline: none;
+  border-color: var(--border-focus);
+  box-shadow: 0 0 0 2px rgba(92, 108, 255, 0.2), 0 4px 20px rgba(0,0,0,0.2);
+}
+
+.sp-clear {
+  position: absolute;
+  right: 16px;
+  color: var(--text-muted);
+  background: rgba(255,255,255,0.1);
+  border-radius: 50%;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-fast);
+}
+
+.sp-clear:hover {
+  background: rgba(255,255,255,0.2);
+  color: var(--text-primary);
+}
+
+.sp-hint {
+  position: absolute;
+  right: 16px;
+  color: var(--text-muted);
+  font-size: 12px;
+  font-weight: 600;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  padding: 2px 6px;
+  border-radius: 6px;
+}
+
+.sp-tabs-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+/* Quick Scopes */
+.quick-scopes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.qs-label {
+  font-size: 12px;
+  color: var(--text-muted);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.qs-chip {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-secondary);
+  font-size: 13px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  transition: all var(--transition-fast);
+}
+
+.qs-chip:hover {
+  background: var(--bg-surface-hover);
+  color: var(--text-primary);
+  border-color: var(--border-hover);
+}
+
+/* Results grid layout */
+.resource-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.resource-compact {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.resource-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}

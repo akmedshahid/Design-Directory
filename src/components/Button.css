@@ -1,0 +1,138 @@
+.ds-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-family: inherit;
+  font-weight: 600;
+  border: none;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  white-space: nowrap;
+  outline: none;
+}
+
+.ds-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* Sizes */
+.ds-button-sm {
+  height: 32px;
+  padding: 0 12px;
+  font-size: 13px;
+  border-radius: var(--radius-sm);
+}
+
+.ds-button-md {
+  height: 40px;
+  padding: 0 16px;
+  font-size: 14px;
+}
+
+.ds-button-lg {
+  height: 48px;
+  padding: 0 24px;
+  font-size: 15px;
+  border-radius: var(--radius-lg);
+}
+
+.ds-button-full {
+  width: 100%;
+}
+
+/* Variants */
+.ds-button-primary {
+  background: var(--text-primary);
+  color: var(--bg-main);
+}
+
+.ds-button-primary:hover {
+  background: #e0e0e0;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+}
+
+.ds-button-primary:active {
+  transform: translateY(0);
+}
+
+.ds-button-secondary {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-primary);
+  border: 1px solid var(--border-subtle);
+}
+
+.ds-button-secondary:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.ds-button-danger {
+  background: var(--semantic-danger-bg);
+  color: var(--semantic-danger);
+  border: 1px solid rgba(239, 68, 68, 0.2);
+}
+
+.ds-button-danger:hover {
+  background: rgba(239, 68, 68, 0.2);
+  border-color: rgba(239, 68, 68, 0.3);
+}
+
+.ds-button-ghost {
+  background: transparent;
+  color: var(--text-secondary);
+}
+
+.ds-button-ghost:hover {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-primary);
+}
+
+.ds-button-icon {
+  width: auto;
+  height: auto;
+  padding: 8px;
+  border-radius: 50%;
+  color: var(--text-secondary);
+  background: transparent;
+}
+
+.ds-button-icon:hover {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-primary);
+}
+
+/* Icon Spacing */
+.ds-button-icon {
+  display: inline-flex;
+  flex-shrink: 0;
+}
+
+.ds-button-text {
+  display: inline-block;
+}
+
+/* Loading */
+.ds-button-loading {
+  color: transparent !important;
+  position: relative;
+}
+
+.ds-button-spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 16px;
+  height: 16px;
+  animation: spin 1s linear infinite;
+  color: inherit;
+}
+
+@keyframes spin {
+  100% { transform: translate(-50%, -50%) rotate(360deg); }
+}

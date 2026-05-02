@@ -1,0 +1,161 @@
+.sites-directory-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 48px 100px;
+}
+
+.sd-compact-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 48px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid var(--border-color);
+  gap: 24px;
+}
+
+.sd-header-content {
+  flex: 1;
+}
+
+.sd-intro-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(147, 51, 234, 0.1);
+  border: 1px solid rgba(147, 51, 234, 0.2);
+  color: var(--accent-color);
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 4px 10px;
+  border-radius: 20px;
+  margin-bottom: 16px;
+}
+
+.sd-intro-heading {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0 0 8px 0;
+  letter-spacing: -0.02em;
+}
+
+.sd-intro-desc {
+  font-size: 15px;
+  color: var(--text-secondary);
+  margin: 0 0 20px 0;
+  max-width: 600px;
+}
+
+.sd-meta-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.sd-meta-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.sd-meta-divider {
+  width: 1px;
+  height: 12px;
+  background-color: var(--border-color);
+}
+
+.sd-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.sd-grouped-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.sd-category-group {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.sd-group-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.sd-group-title-col {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.sd-group-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sd-group-count {
+  font-size: 12px;
+  color: var(--text-muted);
+  background: var(--card-bg);
+  padding: 2px 8px;
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+}
+
+.sd-group-subcats {
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.sd-view-all {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: all var(--transition-fast);
+}
+
+.sd-view-all:hover {
+  color: #b266ff;
+  transform: translateX(2px);
+}
+
+.sd-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+@media (max-width: 768px) {
+  .sd-compact-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .sd-header-actions {
+    width: 100%;
+    justify-content: flex-start;
+  }
+}

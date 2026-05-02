@@ -1,0 +1,122 @@
+/* Sites Category Overrides */
+
+/* Proper Subcategory Chips */
+.qs-chip {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-secondary);
+  font-size: 13px;
+  font-weight: 500;
+  padding: 6px 14px;
+  border-radius: 20px;
+  transition: all var(--transition-fast);
+  cursor: pointer;
+}
+
+.qs-chip:hover {
+  background: var(--bg-surface-hover);
+  color: var(--text-primary);
+  border-color: var(--border-hover);
+}
+
+.qs-chip.active {
+  background: var(--text-primary);
+  color: var(--bg-main);
+  border-color: var(--text-primary);
+}
+
+/* Filter Drawer Mock */
+.sc-filter-drawer {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.filter-drawer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.filter-drawer-header h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.filter-count {
+  font-size: 12px;
+  color: var(--accent-color);
+  background: rgba(147, 51, 234, 0.1);
+  padding: 2px 8px;
+  border-radius: 12px;
+}
+
+.filter-drawer-body {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 32px;
+}
+
+.filter-group label {
+  display: block;
+  font-size: 13px;
+  color: var(--text-secondary);
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.filter-options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.custom-checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--text-primary);
+  cursor: pointer;
+}
+
+/* Results */
+.sc-results {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Compact mode modifier */
+.sc-results.compact .site-list-row {
+  padding: 12px;
+  gap: 12px;
+}
+
+.sc-results.compact .site-favicon-wrapper {
+  width: 32px;
+  height: 32px;
+}
+
+.sc-results.compact .site-favicon {
+  width: 16px;
+  height: 16px;
+}
+
+.sc-results.compact .site-row-badges {
+  flex-direction: row;
+  width: auto;
+}
+
+.sc-results.compact .badges-row-1, .sc-results.compact .badges-row-2 {
+  flex-wrap: nowrap;
+}
+
+/* Grouped mode placeholder */
+.sc-results.grouped {
+  gap: 32px;
+}

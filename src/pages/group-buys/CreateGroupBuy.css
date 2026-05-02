@@ -1,0 +1,243 @@
+.gb-create-page {
+  padding-top: 40px;
+  padding-bottom: 80px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.gb-create-header {
+  margin-bottom: 40px;
+}
+
+.gb-create-header h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0 0 12px;
+  color: var(--text-primary);
+}
+
+.gb-create-header p {
+  font-size: 16px;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+/* Stepper */
+.gb-stepper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 48px;
+  position: relative;
+}
+
+.gb-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  z-index: 2;
+  flex: 1;
+}
+
+.gb-step-circle {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--bg-surface);
+  border: 2px solid var(--border-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  transition: all 0.3s ease;
+}
+
+.gb-step-label {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.gb-step-line {
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  width: 100%;
+  height: 2px;
+  background: var(--border-subtle);
+  z-index: -1;
+}
+
+.gb-step.active .gb-step-circle {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+}
+
+.gb-step.active .gb-step-label {
+  color: var(--accent-color);
+}
+
+.gb-step.completed .gb-step-circle {
+  background: var(--accent-color);
+  border-color: var(--accent-color);
+  color: white;
+}
+
+.gb-step.completed .gb-step-label {
+  color: var(--text-primary);
+}
+
+.gb-step.completed .gb-step-line {
+  background: var(--accent-color);
+}
+
+/* Form Styles */
+.gb-create-content {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: 16px;
+  padding: 32px;
+}
+
+.gb-step-form h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0 0 24px;
+  color: var(--text-primary);
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.form-row .form-group {
+  flex: 1;
+  margin-bottom: 0;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="url"],
+.form-group input[type="number"],
+.form-group textarea,
+.form-group select {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  padding: 12px 16px;
+  color: var(--text-primary);
+  font-size: 14px;
+  transition: border-color 0.2s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: var(--accent-color);
+}
+
+.form-hint {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin: 6px 0 0;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+.checkbox-label input {
+  margin-top: 4px;
+}
+
+/* Warning Box */
+.gb-warning-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.2);
+  border-radius: 12px;
+  padding: 20px;
+  color: #f87171;
+}
+
+.gb-warning-box strong {
+  display: block;
+  font-size: 15px;
+  margin-bottom: 4px;
+  color: #fca5a5;
+}
+
+.gb-warning-box p {
+  font-size: 14px;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Review Summary */
+.gb-review-summary {
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.gb-review-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.gb-review-row:last-child {
+  border-bottom: none;
+}
+
+.gb-review-row span {
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
+.gb-review-row strong {
+  color: var(--text-primary);
+  font-size: 14px;
+}
+
+/* Actions */
+.gb-create-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border-subtle);
+}

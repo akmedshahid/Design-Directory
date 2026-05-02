@@ -1,0 +1,66 @@
+.segmented-control {
+  display: inline-flex;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 4px;
+  gap: 4px;
+}
+
+.segmented-control.size-sm { padding: 2px; border-radius: 8px; }
+.segmented-control.size-lg { padding: 6px; border-radius: 14px; }
+
+.segment-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: transparent;
+  border: none;
+  color: var(--text-secondary);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  font-weight: 500;
+  user-select: none;
+}
+
+.segmented-control.size-sm .segment-btn { padding: 4px 10px; font-size: 12px; border-radius: 6px; }
+.segmented-control.size-md .segment-btn { padding: 6px 16px; font-size: 13px; }
+.segmented-control.size-lg .segment-btn { padding: 8px 20px; font-size: 14px; border-radius: 10px; }
+
+.segment-btn:hover:not(.active) {
+  color: var(--text-primary);
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.segment-btn.active {
+  background-color: rgba(255, 255, 255, 0.12);
+  color: var(--text-primary);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(255, 255, 255, 0.05) inset;
+}
+
+.segment-icon {
+  display: flex;
+  align-items: center;
+  opacity: 0.8;
+}
+
+.segment-btn.active .segment-icon {
+  opacity: 1;
+}
+
+.segment-count {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: var(--text-muted);
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 10px;
+  margin-left: 2px;
+}
+
+.segment-btn.active .segment-count {
+  background-color: rgba(147, 51, 234, 0.2);
+  color: var(--accent-color);
+}

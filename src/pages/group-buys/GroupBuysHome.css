@@ -1,0 +1,123 @@
+.gb-home-page {
+  padding-top: 40px;
+  padding-bottom: 80px;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.gb-overview-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 40px;
+  max-width: 600px;
+}
+
+.gb-header-pill {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 4px 10px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
+  margin-bottom: 16px;
+  color: var(--text-secondary);
+}
+
+.gb-overview-header h1 {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: var(--text-primary);
+  margin: 0 0 12px;
+}
+
+.gb-overview-header p {
+  font-size: 16px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin: 0 0 24px;
+}
+
+.gb-header-actions {
+  display: flex;
+  gap: 12px;
+}
+
+/* Summary Strip */
+.gb-summary-strip {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 48px;
+}
+
+.gb-summary-item {
+  flex: 1;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.gb-summary-val {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.gb-summary-label {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Sections */
+.gb-home-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.gb-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.gb-section-header h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.gb-view-all {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+.gb-view-all:hover {
+  text-decoration: underline;
+}
+
+.gb-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.gb-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
